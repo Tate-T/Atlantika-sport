@@ -12,6 +12,13 @@ body{
     line-height: normal;
 }
 
+.container{
+    outline: solid green;
+    width: 1221px;
+    padding: 0px 10px ;
+    margin: 0 auto;
+}
+
 /* header */
 
 .header-options{
