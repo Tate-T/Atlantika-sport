@@ -21,10 +21,55 @@ body{
 
 /* header */
 
+.header-top{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-contacts{
+    background-color: blue;
+    margin-right: 275px ;
+}
+
+.header-socials{
+    display: flex;
+    gap: 4px;
+    outline: solid red;
+    margin-bottom: 8px;
+}
+
+.header-icon{
+    width: 18px;
+    height: 18px;
+}
+
 .header-options{
 color: var(--acctent-color)
 font-family: "Inter", sans-serif;
 font-weight: 600;
+padding-right: 12px ;
+}
+
+.header-option{
+    display: block;
+}
+
+.header-registration{
+    background-color: aquamarine;
+    margin-left: 86px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-exit{
+    display: inline-block;
+    margin-left: auto;
+}
+
+.header-registrs{
+    display: flex;
 }
 
 .header-auth{
@@ -33,6 +78,10 @@ text-align: right;
 font-family: "Inter", sans-serif;
 font-size: 14px;
 line-height: 18px; /* 128.571% */
+}
+
+.header-basket{
+    display: flex;
 }
 
 .header-quantity{
@@ -49,6 +98,10 @@ font-size: 14px;
 font-weight: 500;
 font-family: "Inter", sans-serif;
 text-decoration-line: underline;
+}
+
+.header-bottom{
+    background-color: blueviolet;
 }
 
 .header-page{
