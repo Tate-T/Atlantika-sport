@@ -63,6 +63,19 @@ color: var(--text-color);
 line-height: 26px; /* 144.444% */
 }
 
+.hero-title{
+    color:var(--text-color);
+    font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+}
+
+.breadcrumb-link{
+    color: var(--editional-text);
+font-size: 14px;
+line-height: 20px; /* 142.857% */
+}
+
 .hero-registr{
 color: var(--text-color);
 font-size: 17px;
@@ -160,4 +173,65 @@ line-height: 22px; /* 157.143% */
 .networks-text{
 color: #CCC;
 font-size: 12px;
+}
+
+.info-title{
+    color:var(--acctent-color);
+text-align: center;
+font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+}
+
+.info-text{
+    color: var(--editional-text);
+font-size: 16px;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
+
+.info-blockquote{
+    color:var(--editional-text);
+font-size: 20px;
+font-weight: 700;
+line-height: 24px; /* 120% */
+}
+
+.delivery-title{
+    color: var(--acctent-color);
+font-size: 20px;
+font-weight: 700;
+line-height: 30px; /* 150% */
+}
+
+.delivery-text{
+    color:var(--editional-text);
+font-size: 16px;
+line-height: 24px; /* 150% */
+}
+
+.dropshipping-title{
+    color: var(--acctent-color);
+font-size: 20px;
+font-weight: 700;
+line-height: 30px; /* 150% */
+}
+
+.dropshipping-text{
+    color: var(--editional-text);
+font-size: 16px;
+line-height: 24px; /* 150% */
+}
+
+.dropshipping-top{
+    color: var(--editional-text);
+font-size: 16px;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
+
+.discount-text{
+    color:var(--editional-text);
+font-size: 16px;
+line-height: 24px; /* 150% */
 }

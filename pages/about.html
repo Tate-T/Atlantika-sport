@@ -21,13 +21,13 @@
           <ul class="header-socials">
             <li class="header-social">
               <a href="" class="header-link">
-                <img src="/images/viber.png" alt="viber" class="header-icon" />
+                <img src="../images/viber.png" alt="viber" class="header-icon" />
               </a>
             </li>
             <li class="header-social">
               <a href="" class="header-link">
                 <img
-                  src="/images/whatsapp.png"
+                  src="../images/whatsapp.png"
                   alt="whatsapp"
                   class="header-icon"
                 />
@@ -36,50 +36,80 @@
             <li class="header-social">
               <a href="" class="header-link">
                 <img
-                  src="/images/telegram.png"
+                  src="../images/telegram.png"
                   alt="telegram"
                   class="header-icon"
                 />
               </a>
             </li>
           </ul>
-          <select name="tel" id="tel">
-            <option value="+380 93 920 58 70">+380 93 920 58 70</option>
+          <select name="tel" id="tel" class="header-options">
+            <option value="+380 93 920 58 70" class="header-option">
+              +380 93 920 58 70
+            </option>
           </select>
-          <a href="/"><img src="/images/logo.png" alt="atlantika" /></a>
-          <a href="/"><img src="/images/exit.png" alt="exit" /></a>
-          <ul>
-            <li><a href="">Реєстрація</a></li>
-            <li><a href="">Вхід</a></li>
+          <a href="/" class="header-logo"
+            ><img src="../images/logo.png" alt="atlantika"
+          /></a>
+          <a href="/" class="header-exit"
+            ><img src="../images/exit.png" alt="exit"
+          /></a>
+          <ul class="header-registrs">
+            <li class="header-registr">
+              <a href="" class="header-auth">Реєстрація</a>
+            </li>
+            <li class="header-registr">
+              <a href="" class="header-auth">Вхід</a>
+            </li>
           </ul>
-          <div>
-            <p>0</p>
-            <img src="/images/basket.png" alt="basket" />
-            <p>0.0 грн</p>
+          <div class="header-box">
+            <p class="header-quantity">0</p>
+            <img src="../images/basket.png" alt="basket" class="header-cart" />
+            <p class="header-price">0.0 грн</p>
           </div>
         </section>
-        <section class="header-bottom">
-          <ul>
-            <li><a href="">Каталог товарів</a></li>
-            <li><a href="./system.html">Система знижок</a></li>
-            <li><a href="./dropshipping.html">Дропшипінг</a></li>
-            <li><a href="./delivery.html">Доставка і оплата</a></li>
-            <li><a href="">Акції</a></li>
-            <li><a href="./contacts.html">Контакти</a></li>
-            <li><a href="./about.html">Про нас</a></li>
+        <nav class="header-bottom">
+          <ul class="header-nav">
+            <li class="header-point">
+              <a href="" class="header-page">Каталог товарів</a>
+            </li>
+            <li class="header-point">
+              <a href="./system.html" class="header-page">Система знижок</a>
+            </li>
+            <li class="header-point">
+              <a href="./dropshipping.html" class="header-page">Дропшипінг</a>
+            </li>
+            <li class="header-point">
+              <a href="./delivery.html" class="header-page"
+                >Доставка і оплата</a
+              >
+            </li>
+            <li class="header-point">
+              <a href="" class="header-page">Акції</a>
+            </li>
+            <li class="header-point">
+              <a href="./contacts.html" class="header-page">Контакти</a>
+            </li>
+            <li class="header-point">
+              <a href="./about.html" class="header-page">Про нас</a>
+            </li>
           </ul>
-        </section>
+        </nav>
       </div>
     </header>
     <main>
-      <section>
+      <section class="info">
         <div class="container">
-          <ul>
-            <li><a href="/">Головна</a></li>
-            <li><a href="./about.html">Про нас</a></li>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-point">
+              <a href="/" style="color: #C2C2C2;" class="breadcrumb-link">Головна</a>
+            </li>
+            <li class="breadcrumb-point">
+              <a href="./about.html" class="breadcrumb-link">Про нас</a>
+            </li>
           </ul>
-          <h1>Про нас</h1>
-          <p>
+          <h1 class="info-title">Про нас</h1>
+          <p class="info-text">
             Атлантика – це компанія з ім'ям, яка успішно працює на території
             України понад 15 років. У нас працюють висококваліфіковані
             професіонали своєї справи. Створюючи нашу компанію, ми ставили собі
@@ -92,81 +122,130 @@
             українського ринку. Атлантика надійний партнер та постачальник
             спортивного харчування для Вашого бізнесу!
           </p>
-          <p>Ми розвиваємось, чого і Вам бажаємо разом з нами.</p>
-          <img src="/images/gymgirl.png" alt="girl" />
+          <blockquote class="info-blockquote">
+            Ми розвиваємось, чого і Вам бажаємо разом з нами.
+          </blockquote>
+          <img class="info-img" src="/images/gymgirl.png" alt="girl" />
         </div>
       </section>
-      <section>
+      <section class="main-feedback">
         <div class="container">
-          <h2>Виникли питання?</h2>
-          <p>Якщо у вас виникли питання, ми обов'язково на все відповімо</p>
-          <form action="">
-            <label for="name">Ваше ім’я *</label>
-            <input type="text" id="name" />
-            <label for="telephone">Ваш номер телефону *</label>
-            <input type="tel" id="telephone" />
-            <label for="email">Ваш E-mail *</label>
-            <input type="mail" id="email" />
+          <h2 class="feedback-title">Виникли питання?</h2>
+          <p class="feedback-top">
+            Якщо у вас виникли питання, ми обов'язково на все відповімо
+          </p>
+          <form class="feedback-form">
+            <label for="name" class="feedback-lable">Ваше ім’я *</label>
+            <input type="text" id="name" class="feedback-input" />
+            <label for="telephone" class="feedback-lable"
+              >Ваш номер телефону *</label
+            >
+            <input type="tel" id="telephone" class="feedback-input" />
+            <label for="email" class="feedback-lable">Ваш E-mail *</label>
+            <input type="email" id="email" class="feedback-input" />
             <hr />
-            <p>
+            <p class="feedback-bottom">
               Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
               угодою про конфіденційність та відповідно до Положення та закону
               про захист даних.
             </p>
-            <input type="checkbox" id="agree" />
-            <label for="agree">Я даю згоду</label>
-            <button type="submit">надіслати</button>
+            <input type="checkbox" id="agree" class="feedback-input" />
+            <label for="agree" class="feedback-lable">Я даю згоду</label>
+            <button type="submit" class="feedback-bt">надіслати</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <section>
+      <section class="footer-nav">
         <div class="container">
-          <ul>
-            <li><a href="">Каталог товарів</a></li>
-            <li><a href="./system.html">Система знижок</a></li>
-            <li><a href="./dropshipping.html">Дропшипінг</a></li>
-            <li><a href="./delivery.html">Доставка і оплата</a></li>
-            <li><a href="./contacts.html">Контакти</a></li>
-            <li><a href="./about.html">Про нас</a></li>
+          <ul class="footer-points">
+            <li class="footer-point">
+              <a href="" class="footer-link">Каталог товарів</a>
+            </li>
+            <li class="footer-point">
+              <a href="./pages/system.html" class="footer-link"
+                >Система знижок</a
+              >
+            </li>
+            <li class="footer-point">
+              <a href="./pages/dropshipping.html" class="footer-link"
+                >Дропшипінг</a
+              >
+            </li>
+            <li class="footer-point">
+              <a href="./pages/delivery.html" class="footer-link"
+                >Доставка і оплата</a
+              >
+            </li>
+            <li class="footer-point">
+              <a href="./pages/contacts.html" class="footer-link">Контакти</a>
+            </li>
+            <li class="footer-point">
+              <a href="./pages/about.html" class="footer-link">Про нас</a>
+            </li>
           </ul>
-          <a href="/"><img src="/images/logo.png" alt="atlantika" /></a>
-          <ul>
-            <li>
-              <p>Ігор</p>
-              <a href="tel:+380939205870">+380 93 920 58 70</a
-              ><img src="/images/tel.png" alt="tel" />
+          <a href="/" class="link-logo"
+            ><img src="./images/logo.png" alt="atlantika" class="footer-logo"
+          /></a>
+        </div>
+      </section>
+      <section class="footer-contacts">
+        <div class="container">
+          <ul class="contacts-points">
+            <li class="contacts-point">
+              <h2 class="contacts-title">Ігор</h2>
+              <a href="tel:+380939205870" class="contacts-link"
+                >+380 93 920 58 70</a
+              ><img src="./images/tel.png" alt="tel" class="contacts-img" />
             </li>
-            <li>
-              <p>Роман</p>
-              <a href="tel:+380936727478">+380 93 672 74 78</a
-              ><img src="/images/tel.png" alt="tel" />
+            <li class="contacts-point">
+              <h2 class="contacts-title">Роман</h2>
+              <a href="tel:+380936727478" class="contacts-link"
+                >+380 93 672 74 78</a
+              ><img src="./images/tel.png" alt="tel" class="contacts-img" />
             </li>
-            <li>
-              <p>Пн.- пт.: с 10:00 до 19:00</p>
-              <img src="/images/cloсk.png" alt="cloсk" />
+            <li class="contacts-point">
+              <p class="contacts-text">Пн.- пт.: с 10:00 до 19:00</p>
+              <img src="./images/cloсk.png" alt="cloсk" class="contacts-img" />
             </li>
-            <li>
-              <a href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
+            <li class="contacts-point">
+              <a
+                href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
+                class="contacts-link"
                 >Київ, вул. Андрющенко 2/26</a
-              ><img src="/images/mark.png" alt="mark" />
+              ><img src="./images/mark.png" alt="mark" class="contacts-img" />
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="footer-networks">
         <div class="container">
-          <p>ATLANTIKA.BIZ © 2022</p>
-          <ul>
-            <li>
-              <a href=""><img src="/images/facebook.png" alt="facebook" /></a>
+          <p class="networks-text">ATLANTIKA.BIZ © 2022</p>
+          <ul class="networks-points">
+            <li class="networks-point">
+              <a href="" class="networks-link"
+                ><img
+                  src="./images/facebook.png"
+                  class="networks-img"
+                  alt="facebook"
+              /></a>
             </li>
-            <li>
-              <a href=""><img src="/images/youtube.png" alt="youtube" /></a>
+            <li class="networks-point">
+              <a href="" class="networks-link"
+                ><img
+                  src="./images/youtube.png"
+                  class="networks-img"
+                  alt="youtube"
+              /></a>
             </li>
-            <li>
-              <a href=""><img src="/images/instagram.png" alt="instagram" /></a>
+            <li class="networks-point">
+              <a href="" class="networks-link"
+                ><img
+                  src="./images/instagram.png"
+                  class="networks-img"
+                  alt="instagram"
+              /></a>
             </li>
           </ul>
         </div>
