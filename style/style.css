@@ -28,14 +28,12 @@ body{
 }
 
 .header-contacts{
-    background-color: blue;
     margin-right: 275px ;
 }
 
 .header-socials{
     display: flex;
     gap: 4px;
-    outline: solid red;
     margin-bottom: 8px;
 }
 
@@ -56,7 +54,6 @@ padding-right: 12px ;
 }
 
 .header-registration{
-    background-color: aquamarine;
     margin-left: 86px;
     margin-right: auto;
     display: flex;
@@ -101,7 +98,15 @@ text-decoration-line: underline;
 }
 
 .header-bottom{
-    background-color: blueviolet;
+    background-color: #283761;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.header-points{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
 }
 
 .header-page{
@@ -110,6 +115,28 @@ font-size: 16px;
 }
 
 /* main */
+
+.hero{
+    background-image: url(../images/background-main.png) ;
+    padding-top: 84px;
+    padding-bottom: 39px;
+}
+
+.hero-logo{
+    padding-bottom: 310px;
+}
+
+.hero-box{
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 200px;
+}
 
 .hero-text{
 color: var(--text-color);
@@ -135,6 +162,19 @@ font-size: 17px;
 font-weight: 700;
 line-height: 24px; /* 141.176% */
 text-transform: uppercase;
+border-radius: 8px;
+border: 1px solid #01A0C6;
+background-color: #01A0C6;
+padding: 17px 32px;
+}
+
+.hero-link{
+    display: block;
+    margin-top: 57px;
+    outline: solid royalblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22px;
 }
 
 .amongus-title{
