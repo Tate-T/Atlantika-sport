@@ -177,11 +177,28 @@ padding: 17px 32px;
     width: 22px;
 }
 
+.sponsors{
+    padding: 56px 0;
+}
+
+.sponsors-points{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+}
+
+.main-amongus{
+    background-image: url(../images/background-main2.png);
+    padding-top: 105px;
+    padding-bottom: 130px;
+}
+
 .amongus-title{
 color: var(--text-color);
 font-family: "Russo One", sans-serif;
 font-size: 50px;
 line-height: 55px; /* 110% */
+margin-bottom: 24px;
 }
 
 .amongus-text{
@@ -189,14 +206,24 @@ color: var(--text-color);
 font-size: 20px;
 font-weight: 700;
 line-height: 26px; /* 130% */
+margin-bottom: 32px;
+max-width: 522px;
 }
 
-.amongus-link{
+.amongus-bt{
 color: var(--text-color);
 font-size: 17px;
 font-weight: 700;
 line-height: 24px; /* 141.176% */
 text-transform: uppercase;
+border-radius: 8px;
+border: 1px solid #01A0C6;
+background-color: #01A0C6;
+padding: 17px 32px;
+}
+
+.main-feedback{
+    padding: 100px 0;
 }
 
 .feedback-title{
@@ -205,6 +232,7 @@ text-align: center;
 font-family: "Russo One";
 font-size: 50px;
 line-height: 55px; /* 110% */
+margin-bottom: 16px;
 }
 
 .feedback-top{
@@ -212,6 +240,7 @@ color: var(--editional-text);
 text-align: center;
 font-size: 24px;
 line-height: 30px; /* 125% */
+margin-bottom: 40px;
 }
 
 .feedback-label{
@@ -230,6 +259,7 @@ line-height: 24px; /* 150% */
 color: var(--editional-text);
 font-size: 15px;
 line-height: 18px; /* 120% */
+max-width: 692px;
 }
 
 .feedback-bt{
@@ -239,14 +269,35 @@ font-size: 17px;
 font-weight: 700;
 line-height: 24px; /* 141.176% */
 text-transform: uppercase;
+padding: 17px 40px;
+border-radius: 8px;
+border: 1px solid #01A0C6;
+background-color: #01A0C6;
 }
 
 /* footer */
 
+footer{
+    background-color: #000;
+}
+
+.footer-nav{
+    padding-top: 56px ;
+    padding-bottom: 50px;
+}
+
+.footer-box{
+    display: flex;
+}
 
 .footer-link{
 color: var(--text-color);
 font-size: 13px;
+}
+
+.link-logo{
+    margin-left: 138px;
+    margin-right: 186px;
 }
 
 .contacts-title{
@@ -263,9 +314,25 @@ font-size: 14px;
 line-height: 22px; /* 157.143% */
 }
 
+.footer-networks{
+    padding-top: 16px;
+    padding-bottom: 36px ;
+}
+
+.networks-box{
+    display: flex;
+}
+
+.networks-points{
+    display: flex;
+    gap: 15px;
+}
+
 .networks-text{
 color: #CCC;
 font-size: 12px;
+margin-right: 992px;
+max-width: 126px;
 }
 
 .info-title{

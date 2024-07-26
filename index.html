@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Play:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -12,12 +18,6 @@
     />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Play:wght@400;700&family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
     <title>ATLANTIKA</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
               <li class="header-social">
                 <a href="" class="header-link">
                   <img
-                    src="/images/viber.png"
+                    src="./images/viber.png"
                     alt="viber"
                     class="header-icon"
                   />
@@ -38,7 +38,7 @@
               <li class="header-social">
                 <a href="" class="header-link">
                   <img
-                    src="/images/whatsapp.png"
+                    src="./images/whatsapp.png"
                     alt="whatsapp"
                     class="header-icon"
                   />
@@ -47,7 +47,7 @@
               <li class="header-social">
                 <a href="" class="header-link">
                   <img
-                    src="/images/telegram.png"
+                    src="./images/telegram.png"
                     alt="telegram"
                     class="header-icon"
                   />
@@ -61,7 +61,7 @@
             </select>
           </div>
           <a href="/" class="header-logo"
-            ><img src="./images/logo.png" alt="atlantika"
+            ><img src="./images/logo.png" alt="atlantika" class="logo-img"
           /></a>
           <div class="header-registration">
             <a href="/" class="header-exit"
@@ -257,7 +257,7 @@
             Ваш надійний партнер та постачальник спортивного харчування для
             Вашого бізнесу!
           </p>
-          <a href="" class="amongus-link">стати своїм</a>
+          <button class="amongus-bt">стати своїм</button>
         </div>
       </section>
       <section class="main-feedback">
@@ -275,7 +275,6 @@
             <input type="tel" id="telephone" class="feedback-input" />
             <label for="email" class="feedback-lable">Ваш E-mail *</label>
             <input type="email" id="email" class="feedback-input" />
-            <hr />
             <p class="feedback-bottom">
               Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
               угодою про конфіденційність та відповідно до Положення та закону
@@ -290,7 +289,7 @@
     </main>
     <footer>
       <section class="footer-nav">
-        <div class="container">
+        <div class="container footer-box">
           <ul class="footer-points">
             <li class="footer-point">
               <a href="" class="footer-link">Каталог товарів</a>
@@ -320,10 +319,6 @@
           <a href="/" class="link-logo"
             ><img src="./images/logo.png" alt="atlantika" class="footer-logo"
           /></a>
-        </div>
-      </section>
-      <section class="footer-contacts">
-        <div class="container">
           <ul class="contacts-points">
             <li class="contacts-point">
               <h2 class="contacts-title">Ігор</h2>
@@ -352,7 +347,7 @@
         </div>
       </section>
       <section class="footer-networks">
-        <div class="container">
+        <div class="container networks-box">
           <p class="networks-text">ATLANTIKA.BIZ © 2022</p>
           <ul class="networks-points">
             <li class="networks-point">
