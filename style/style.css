@@ -150,6 +150,11 @@ font-size: 50px;
 line-height: 55px; /* 110% */
 }
 
+.breadcrumb{
+    display: flex;
+    gap: 30px;
+}
+
 .breadcrumb-link{
     color: var(--editional-text);
 font-size: 14px;
@@ -243,16 +248,35 @@ line-height: 30px; /* 125% */
 margin-bottom: 40px;
 }
 
+.feedback-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+}
+
 .feedback-label{
-color: var(--editional-text);
-font-size: 15px;
-line-height: 18px; /* 120% */
+    color: var(--editional-text);
+    font-size: 15px;
+    line-height: 18px; /* 120% */
 }
 
 .feedback-input{
 color: #000;
 font-size: 16px;
 line-height: 24px; /* 150% */
+margin-top: 16px;
+}
+
+.bottom-box{
+
 }
 
 .feedback-bottom{
@@ -260,6 +284,7 @@ color: var(--editional-text);
 font-size: 15px;
 line-height: 18px; /* 120% */
 max-width: 692px;
+margin-bottom: 20px;
 }
 
 .feedback-bt{
@@ -290,6 +315,18 @@ footer{
     display: flex;
 }
 
+.footer-points{
+    display: flex;
+    gap: 104px;
+    align-items: flex-start;
+}
+
+.points-box{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .footer-link{
 color: var(--text-color);
 font-size: 13px;
@@ -300,8 +337,14 @@ font-size: 13px;
     margin-right: 186px;
 }
 
+.contacts-point{
+    display: flex;
+}
+
 .contacts-title{
-color: var(--text-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .contacts-link{
@@ -335,19 +378,34 @@ margin-right: 992px;
 max-width: 126px;
 }
 
+.info-box{
+    display: flex;
+}
+
+.info-block{
+    padding-top: 20px ;
+    padding-bottom: 79px;
+    justify-content: flex-start;
+}
+
 .info-title{
     color:var(--acctent-color);
 text-align: center;
 font-family: "Russo One", sans-serif;
 font-size: 50px;
 line-height: 55px; /* 110% */
+margin-top: 40px;
+margin-bottom: 30px;
 }
 
 .info-text{
     color: var(--editional-text);
 font-size: 16px;
 font-weight: 700;
-line-height: 24px; /* 150% */
+line-height: 24px; 
+/* 150% */
+margin-bottom: 30px;
+max-width: ;-width: 579px;
 }
 
 .info-blockquote{

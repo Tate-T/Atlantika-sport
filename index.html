@@ -267,21 +267,29 @@
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
           <form class="feedback-form">
-            <label for="name" class="feedback-lable">Ваше ім’я *</label>
-            <input type="text" id="name" class="feedback-input" />
-            <label for="telephone" class="feedback-lable"
-              >Ваш номер телефону *</label
-            >
-            <input type="tel" id="telephone" class="feedback-input" />
-            <label for="email" class="feedback-lable">Ваш E-mail *</label>
-            <input type="email" id="email" class="feedback-input" />
-            <p class="feedback-bottom">
-              Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
-              угодою про конфіденційність та відповідно до Положення та закону
-              про захист даних.
-            </p>
-            <input type="checkbox" id="agree" class="feedback-input" />
-            <label for="agree" class="feedback-lable">Я даю згоду</label>
+            <div class="form-box">
+              <label for="name" class="feedback-lable">Ваше ім’я *</label>
+              <input type="text" id="name" class="feedback-input" />
+            </div>
+            <div class="form-box">
+              <label for="telephone" class="feedback-lable"
+                >Ваш номер телефону *</label
+              >
+              <input type="tel" id="telephone" class="feedback-input" />
+            </div>
+            <div class="form-box">
+              <label for="email" class="feedback-lable">Ваш E-mail *</label>
+              <input type="email" id="email" class="feedback-input" />
+            </div>
+            <div class="bottom-box">
+              <p class="feedback-bottom">
+                Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
+                угодою про конфіденційність та відповідно до Положення та закону
+                про захист даних.
+              </p>
+              <input type="checkbox" id="agree" class="feedback-input" />
+              <label for="agree" class="feedback-lable">Я даю згоду</label>
+            </div>
             <button type="submit" class="feedback-bt">надіслати</button>
           </form>
         </div>
@@ -291,30 +299,34 @@
       <section class="footer-nav">
         <div class="container footer-box">
           <ul class="footer-points">
-            <li class="footer-point">
-              <a href="" class="footer-link">Каталог товарів</a>
-            </li>
-            <li class="footer-point">
-              <a href="./pages/system.html" class="footer-link"
-                >Система знижок</a
-              >
-            </li>
-            <li class="footer-point">
-              <a href="./pages/dropshipping.html" class="footer-link"
-                >Дропшипінг</a
-              >
-            </li>
-            <li class="footer-point">
-              <a href="./pages/delivery.html" class="footer-link"
-                >Доставка і оплата</a
-              >
-            </li>
-            <li class="footer-point">
-              <a href="./pages/contacts.html" class="footer-link">Контакти</a>
-            </li>
-            <li class="footer-point">
-              <a href="./pages/about.html" class="footer-link">Про нас</a>
-            </li>
+            <div class="points-box">
+              <li class="footer-point">
+                <a href="" class="footer-link">Каталог товарів</a>
+              </li>
+              <li class="footer-point">
+                <a href="./pages/system.html" class="footer-link"
+                  >Система знижок</a
+                >
+              </li>
+              <li class="footer-point">
+                <a href="./pages/dropshipping.html" class="footer-link"
+                  >Дропшипінг</a
+                >
+              </li>
+            </div>
+            <div class="points-box">
+              <li class="footer-point">
+                <a href="./pages/delivery.html" class="footer-link"
+                  >Доставка і оплата</a
+                >
+              </li>
+              <li class="footer-point">
+                <a href="./pages/contacts.html" class="footer-link">Контакти</a>
+              </li>
+              <li class="footer-point">
+                <a href="./pages/about.html" class="footer-link">Про нас</a>
+              </li>
+            </div>
           </ul>
           <a href="/" class="link-logo"
             ><img src="./images/logo.png" alt="atlantika" class="footer-logo"
