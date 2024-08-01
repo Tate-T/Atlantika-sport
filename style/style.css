@@ -190,6 +190,7 @@ padding: 17px 32px;
     display: flex;
     flex-wrap: wrap;
     gap: 52px;
+    justify-content: center;
 }
 
 .main-amongus{
@@ -315,14 +316,14 @@ footer{
     display: flex;
 }
 
-.footer-points{
+.nav-box{
     display: flex;
     gap: 104px;
-    align-items: flex-start;
 }
 
-.points-box{
+.footer-points{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 18px;
 }
@@ -339,18 +340,27 @@ font-size: 13px;
 
 .contacts-point{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contacts-title{
-color: var(--acctent-color);
-font-size: 20px;
-font-weight: 700;
-line-height: 30px; /* 150% */
-margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400px;
 }
 
 .contacts-link{
 color: var(--text-color);
+}
+
+.contacts-img{
+    margin-left: 12px;
+}
+
+.contacts-schedule{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contacts-text{
