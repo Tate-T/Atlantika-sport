@@ -18,91 +18,103 @@
     <header>
       <div class="container">
         <section class="header-top">
-          <ul class="header-socials">
-            <li class="header-social">
-              <a href="" class="header-link">
-                <img
-                  src="../images/viber.png"
-                  alt="viber"
-                  class="header-icon"
-                />
-              </a>
-            </li>
-            <li class="header-social">
-              <a href="" class="header-link">
-                <img
-                  src="../images/whatsapp.png"
-                  alt="whatsapp"
-                  class="header-icon"
-                />
-              </a>
-            </li>
-            <li class="header-social">
-              <a href="" class="header-link">
-                <img
-                  src="../images/telegram.png"
-                  alt="telegram"
-                  class="header-icon"
-                />
-              </a>
-            </li>
-          </ul>
-          <select name="tel" id="tel" class="header-options">
-            <option value="+380 93 920 58 70" class="header-option">
-              +380 93 920 58 70
-            </option>
-          </select>
+          <div class="header-contacts">
+            <ul class="header-socials">
+              <li class="header-social">
+                <a href="" class="header-link">
+                  <img
+                    src="../images/viber.png"
+                    alt="viber"
+                    class="header-icon"
+                  />
+                </a>
+              </li>
+              <li class="header-social">
+                <a href="" class="header-link">
+                  <img
+                    src="../images/whatsapp.png"
+                    alt="whatsapp"
+                    class="header-icon"
+                  />
+                </a>
+              </li>
+              <li class="header-social">
+                <a href="" class="header-link">
+                  <img
+                    src="../images/telegram.png"
+                    alt="telegram"
+                    class="header-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+            <select name="tel" id="tel" class="header-options">
+              <option value="+380 93 920 58 70" class="header-option">
+                +380 93 920 58 70
+              </option>
+            </select>
+          </div>
           <a href="/" class="header-logo"
             ><img src="../images/logo.png" alt="atlantika"
           /></a>
-          <a href="/" class="header-exit"
-            ><img src="../images/exit.png" alt="exit"
-          /></a>
-          <ul class="header-registrs">
-            <li class="header-registr">
-              <a href="" class="header-auth">Реєстрація</a>
-            </li>
-            <li class="header-registr">
-              <a href="" class="header-auth">Вхід</a>
-            </li>
-          </ul>
+          <div class="header-registration">
+            <a href="/" class="header-exit"
+              ><img src="../images/exit.png" alt="exit"
+            /></a>
+            <ul class="header-registrs">
+              <li class="header-registr">
+                <a href="" class="header-auth">Реєстрація</a>
+              </li>
+              <li class="header-registr">
+                <a href="" class="header-auth">Вхід</a>
+              </li>
+            </ul>
+          </div>
           <div class="header-box">
-            <p class="header-quantity">0</p>
-            <img src="../images/basket.png" alt="basket" class="header-cart" />
+            <div class="header-basket">
+              <p class="header-quantity">0</p>
+              <img
+                src="../images/basket.png"
+                alt="basket"
+                class="header-cart"
+              />
+            </div>
             <p class="header-price">0.0 грн</p>
           </div>
         </section>
-        <nav class="header-bottom">
-          <ul class="header-nav">
-            <li class="header-point">
-              <a href="" class="header-page">Каталог товарів</a>
-            </li>
-            <li class="header-point">
-              <a href="./system.html" class="header-page">Система знижок</a>
-            </li>
-            <li class="header-point">
-              <a href="./dropshipping.html" class="header-page">Дропшипінг</a>
-            </li>
-            <li class="header-point">
-              <a href="./delivery.html" class="header-page"
-                >Доставка і оплата</a
-              >
-            </li>
-            <li class="header-point">
-              <a href="" class="header-page">Акції</a>
-            </li>
-            <li class="header-point">
-              <a href="./contacts.html" class="header-page">Контакти</a>
-            </li>
-            <li class="header-point">
-              <a href="./about.html" class="header-page">Про нас</a>
-            </li>
-          </ul>
-        </nav>
+        <section class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-points">
+              <li class="header-point">
+                <a href="" class="header-page">Каталог товарів</a>
+              </li>
+              <li class="header-point">
+                <a href="./system.html" class="header-page">Система знижок</a>
+              </li>
+              <li class="header-point">
+                <a href="./dropshipping.html" class="header-page">Дропшипінг</a>
+              </li>
+              <li class="header-point">
+                <a href="./delivery.html" class="header-page"
+                  >Доставка і оплата</a
+                >
+              </li>
+              <li class="header-point">
+                <a href="" class="header-page">Акції</a>
+              </li>
+              <li class="header-point">
+                <a href="./contacts.html" class="header-page">Контакти</a>
+              </li>
+              <li class="header-point">
+                <a href="./about.html" class="header-page">Про нас</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="location">
         <div class="container">
           <ul class="breadcrumb">
             <li class="breadcrumb-point">
@@ -114,72 +126,77 @@
               <a href="./contacts.html" class="breadcrumb-link">Контакти</a>
             </li>
           </ul>
-          <h1 class="hero-title">Де нас знайти</h1>
+          <h1 class="location-title">Де нас знайти</h1>
         </div>
       </section>
-      <section class="contacts">
-        <div class="container">
-          <img src="/images/map.svg" alt="map" class="contacts-img" />
-          <h2 class="contacts-title">Контакти</h2>
-          <ul class="contacts-points">
-            <li class="contacts-point">
-              <a href="" class="contacts-link"
-                ><img class="contacts-img" src="/images/viber.png" alt="viber"
-              /></a>
-            </li>
-            <li class="contacts-point">
-              <a href="" class="contacts-link"
-                ><img
-                  class="contacts-img"
-                  src="/images/whatsapp.png"
-                  alt="whatsapp"
-              /></a>
-            </li>
-            <li class="contacts-point">
-              <a href="" class="contacts-link"
-                ><img
-                  class="contacts-img"
-                  src="/images/telegram.png"
-                  alt="telegram"
-              /></a>
-            </li>
-          </ul>
-          <ul class="contacts-points">
-            <li class="contacts-point">
-              <p class="contacts-text" style="color: #666">Ігор</p>
-              <a
-                href="tel:+380939205870"
-                class="contacts-link"
-                style="color: #666"
-                >+380 93 920 58 70</a
-              >
-              <img class="contacts-img" src="/images/tel.png" alt="tel" />
-            </li>
-            <li class="contacts-point">
-              <p class="contacts-text" style="color: #666">Роман</p>
-              <a
-                href="tel:+380936727478"
-                class="contacts-link"
-                style="color: #666"
-                >+380 93 672 74 78</a
-              >
-              <img src="/images/tel.png" alt="tel" class="contacts-img" />
-            </li>
-            <li class="contacts-point">
-              <p class="contacts-text" style="color: #666">
-                Пн.- пт.: с 10:00 до 19:00
-              </p>
-            </li>
-            <li class="contacts-point">
-              <a
-                class="contacts-link"
-                href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
-                style="color: #666"
-                >Київ, вул. Андрющенко 2/26</a
-              >
-              <img class="contacts-img" src="/images/mark.png" alt="mark" />
-            </li>
-          </ul>
+      <section class="main-contacts">
+        <div class="container contacts">
+          <img src="../images/map.svg" alt="map" class="contacts-map" />
+          <div class="contacts-box">
+            <h2 class="contacts-title">Контакти</h2>
+            <ul class="social-points">
+              <li class="social-point">
+                <a href="" class="contacts-link"
+                  ><img
+                    class="contacts-img"
+                    src="../images/viber.png"
+                    alt="viber"
+                /></a>
+              </li>
+              <li class="social-point">
+                <a href="" class="contacts-link"
+                  ><img
+                    class="contacts-img"
+                    src="../images/whatsapp.png"
+                    alt="whatsapp"
+                /></a>
+              </li>
+              <li class="social-point">
+                <a href="" class="contacts-link"
+                  ><img
+                    class="contacts-img"
+                    src="../images/telegram.png"
+                    alt="telegram"
+                /></a>
+              </li>
+            </ul>
+            <ul class="contacts-points">
+              <li class="contacts-point">
+                <p class="contacts-text" style="color: #666">Ігор</p>
+                <a
+                  href="tel:+380939205870"
+                  class="contacts-link"
+                  style="color: #666"
+                  >+380 93 920 58 70</a
+                >
+                <img class="contacts-img" src="../images/tel.png" alt="tel" />
+              </li>
+              <li class="contacts-point">
+                <p class="contacts-text" style="color: #666">Роман</p>
+                <a
+                  href="tel:+380936727478"
+                  class="contacts-link"
+                  style="color: #666"
+                  >+380 93 672 74 78</a
+                >
+                <img src="../images/tel.png" alt="tel" class="contacts-img" />
+              </li>
+              <li class="contacts-point">
+                <p class="contacts-text" style="color: #666">
+                  Пн.- пт.: с 10:00 до 19:00
+                </p>
+              </li>
+              <li class="contacts-point">
+                <a
+                  class="contacts-link"
+                  href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
+                  style="color: #666"
+                  >Київ, вул. Андрющенко 2/26</a
+                >
+                <img class="contacts-img" src="../images/mark.png" alt="mark" />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="main-feedback">
@@ -189,22 +206,29 @@
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
           <form class="feedback-form">
-            <label for="name" class="feedback-lable">Ваше ім’я *</label>
-            <input type="text" id="name" class="feedback-input" />
-            <label for="telephone" class="feedback-lable"
-              >Ваш номер телефону *</label
-            >
-            <input type="tel" id="telephone" class="feedback-input" />
-            <label for="email" class="feedback-lable">Ваш E-mail *</label>
-            <input type="email" id="email" class="feedback-input" />
-            <hr />
-            <p class="feedback-bottom">
-              Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
-              угодою про конфіденційність та відповідно до Положення та закону
-              про захист даних.
-            </p>
-            <input type="checkbox" id="agree" class="feedback-input" />
-            <label for="agree" class="feedback-lable">Я даю згоду</label>
+            <div class="form-box">
+              <label for="name" class="feedback-lable">Ваше ім’я *</label>
+              <input type="text" id="name" class="feedback-input" />
+            </div>
+            <div class="form-box">
+              <label for="telephone" class="feedback-lable"
+                >Ваш номер телефону *</label
+              >
+              <input type="tel" id="telephone" class="feedback-input" />
+            </div>
+            <div class="form-box">
+              <label for="email" class="feedback-lable">Ваш E-mail *</label>
+              <input type="email" id="email" class="feedback-input" />
+            </div>
+            <div class="bottom-box">
+              <p class="feedback-bottom">
+                Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
+                угодою про конфіденційність та відповідно до Положення та закону
+                про захист даних.
+              </p>
+              <input type="checkbox" id="agree" class="feedback-input" />
+              <label for="agree" class="feedback-lable">Я даю згоду</label>
+            </div>
             <button type="submit" class="feedback-bt">надіслати</button>
           </form>
         </div>
@@ -212,7 +236,7 @@
     </main>
     <footer>
       <section class="footer-nav">
-        <div class="container">
+        <div class="container footer-box">
           <ul class="footer-points">
             <li class="footer-point">
               <a href="" class="footer-link">Каталог товарів</a>
@@ -236,7 +260,10 @@
             </li>
           </ul>
           <a href="/" class="link-logo"
-            ><img src="../images/logo.png" alt="atlantika" class="footer-logo"
+            ><img
+              src="../images/logofooter.png"
+              alt="atlantika"
+              class="footer-logo"
           /></a>
         </div>
       </section>

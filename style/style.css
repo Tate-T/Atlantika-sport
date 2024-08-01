@@ -234,7 +234,7 @@ padding: 17px 32px;
 .feedback-title{
 color: var(--acctent-color);
 text-align: center;
-font-family: "Russo One";
+font-family: "Russo One", sans-serif;
 font-size: 50px;
 line-height: 55px; /* 110% */
 margin-bottom: 16px;
@@ -342,9 +342,11 @@ font-size: 13px;
 }
 
 .contacts-title{
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 400;
+color: var(--acctent-color);
+font-size: 20px;
+font-weight: 700;
+line-height: 30px; /* 150% */
+margin-bottom: 20px;
 }
 
 .contacts-link{
@@ -452,4 +454,47 @@ line-height: 24px; /* 150% */
     color:var(--editional-text);
 font-size: 16px;
 line-height: 24px; /* 150% */
+}
+
+.location{
+    background-image: url(../images/locationbackground.png);
+    padding-top: 20px;
+    padding-bottom: 133px;
+}
+
+.location-title{
+color: var(--text-color);
+font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+margin-top: 92px;
+}
+
+.main-contacts{
+    padding: 60px 0;
+}
+
+.contacts{
+    display: flex;
+    gap: 85px;
+}
+
+.contacts-box{
+margin: auto 0;
+}
+
+.contacts-img{
+    width: 18px;
+    height: 18px;
+}
+
+.social-points{
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.contacts-points{
+    justify-content: flex-end;
 }
