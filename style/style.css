@@ -123,7 +123,7 @@ font-size: 16px;
 }
 
 .hero-logo{
-    padding-bottom: 310px;
+    margin-bottom: 310px;
 }
 
 .hero-box{
@@ -272,6 +272,24 @@ margin-bottom: 40px;
     line-height: 18px; /* 120% */
 }
 
+#name{
+    max-width: 412px;
+    height: auto;
+    padding: 12px 20px;
+}
+
+#telephone{
+    max-width: 251px;
+    height: auto;
+    padding: 12px 17px;
+}
+
+#email{
+    max-width: 343px;
+    height: auto;
+    padding: 12px 22px;
+}
+
 .feedback-input{
 color: #000;
 font-size: 16px;
@@ -400,8 +418,7 @@ line-height: 22px; /* 157.143% */
 .networks-text{
 color: #CCC;
 font-size: 12px;
-margin-right: 992px;
-max-width: 126px;
+margin-right: auto;
 }
 
 .info-box{
@@ -585,20 +602,34 @@ line-height: 55px; /* 110% */
 margin-top: 92px;
 }
 
-.discount{
+.main-discount{
     padding: 60px 0;
+}
+
+.discount{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .discount-text{
     color:var(--editional-text);
 font-size: 16px;
 line-height: 24px; /* 150% */
+max-width: 711px;
 }
 
 .discount-title{
     color: var(--editional-text);
     font-size: 16px;
     line-height: 24px; /* 150% */
+    margin-bottom: 12px;
+}
+
+.discount-points{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .percent{
