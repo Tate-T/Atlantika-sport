@@ -251,10 +251,13 @@ margin-bottom: 40px;
 
 .feedback-form{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-points{
+    display: flex;
     gap: 38px;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .form-box{
@@ -277,7 +280,7 @@ margin-top: 16px;
 }
 
 .bottom-box{
-
+    display: flex;
 }
 
 .feedback-bottom{
@@ -299,6 +302,7 @@ padding: 17px 40px;
 border-radius: 8px;
 border: 1px solid #01A0C6;
 background-color: #01A0C6;
+margin-left: 329px;
 }
 
 /* footer */
@@ -336,6 +340,16 @@ font-size: 13px;
 .link-logo{
     margin-left: 138px;
     margin-right: 186px;
+}
+
+.contacts-point:nth-child(2){
+    margin-top: 11px;
+}
+
+.contacts-point:nth-child(3){
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-top: 13px;
 }
 
 .contacts-point{
@@ -427,17 +441,93 @@ font-weight: 700;
 line-height: 24px; /* 120% */
 }
 
+.drugs{
+    background-image: url(../images/backdrugs.png);
+    padding-top: 20px;
+    padding-bottom: 113px;
+}
+
+.drugs-title{
+    color: var(--text-color);
+    font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+margin-top: 92px;
+}
+
+.main-delivery{
+    padding: 60px 0;
+}
+
+.delivery{
+    display: flex;
+    gap: 90px;
+}
+
+.pay-title{
+    color: var(--acctent-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+    margin-bottom: 20px;
+}
+
+.pay-points{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pay-text{
+    color:var(--editional-text);
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+max-width: 418px;
+}
+
 .delivery-title{
     color: var(--acctent-color);
 font-size: 20px;
 font-weight: 700;
 line-height: 30px; /* 150% */
+margin-bottom: 20px;
+}
+
+.delivery-points{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .delivery-text{
     color:var(--editional-text);
 font-size: 16px;
 line-height: 24px; /* 150% */
+max-width: 528px;
+}
+
+.herodrop{
+    padding-top: 20px;
+    padding-bottom: 133px;
+    background-image: url(../images/backdrop.png);
+}
+
+.herodrop-title{
+    color: var(--text-color);
+    font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+margin-top: 92px;
+}
+
+.main-dropshipping{
+    padding-top: 60px;
+}
+
+.dropshipping{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .dropshipping-title{
@@ -454,6 +544,14 @@ line-height: 24px; /* 150% */
 }
 
 .dropshipping-top{
+    color: var(--editional-text);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 996px;
+}
+
+.drop{
     color: var(--editional-text);
 font-size: 16px;
 font-weight: 700;
@@ -480,31 +578,71 @@ line-height: 55px; /* 110% */
 margin-top: 92px;
 }
 
-.main-contacts{
+.main-social{
     padding: 60px 0;
 }
 
-.contacts{
+.social{
     display: flex;
-    gap: 85px;
 }
 
-.contacts-box{
-margin: auto 0;
+.social-map{
+    margin-right: 85px;
 }
 
-.contacts-img{
+.social-box{
+    margin: auto 0;
+}
+
+.social-title{
+    color: var(--acctent-color);
+font-size: 20px;
+font-weight: 700;
+line-height: 30px; /* 150% */
+margin-bottom: 20px;
+}
+
+.social-points{
+display: flex;
+justify-content: flex-end;
+}
+
+.social-img{
     width: 18px;
     height: 18px;
 }
 
-.social-points{
+.socialinfo-point{
     display: flex;
-    gap: 4px;
-    justify-content: flex-end;
-    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
 }
 
-.contacts-points{
-    justify-content: flex-end;
+.socialinfo-point:nth-child(2){
+    margin-top: 12px;
+}
+
+.socialinfo-point:nth-child(3){
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 13px;
+}
+
+.socialinfo-text{
+    color: var(--editional-text);
+}
+
+.socialinfo-img{
+    margin-left: 12px;
+}
+
+.socialinfo-link{
+    color: var(--editional-text);
+}
+
+.socialinfo-schedule{
+    color: var(--editional-text);
+font-size: 14px;
+line-height: 22px; /* 157.143% */
 }

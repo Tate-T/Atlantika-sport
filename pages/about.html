@@ -60,7 +60,7 @@
               </option>
             </select>
           </div>
-          <a href="/" class="header-logo"
+          <a href="../index.html" class="header-logo"
             ><img src="../images/logo.png" alt="atlantika"
           /></a>
           <div class="header-registration">
@@ -125,7 +125,7 @@
           <div class="info-block">
             <ul class="breadcrumb">
               <li class="breadcrumb-point">
-                <a href="/" style="color: #c2c2c2" class="breadcrumb-link"
+                <a href="../index.html" style="color: #c2c2c2" class="breadcrumb-link"
                   >Головна</a
                 >
               </li>
@@ -161,30 +161,34 @@
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
           <form class="feedback-form">
-            <div class="form-box">
-              <label for="name" class="feedback-lable">Ваше ім’я *</label>
-              <input type="text" id="name" class="feedback-input" />
-            </div>
-            <div class="form-box">
-              <label for="telephone" class="feedback-lable"
-                >Ваш номер телефону *</label
-              >
-              <input type="tel" id="telephone" class="feedback-input" />
-            </div>
-            <div class="form-box">
-              <label for="email" class="feedback-lable">Ваш E-mail *</label>
-              <input type="email" id="email" class="feedback-input" />
+            <div class="form-points">
+              <div class="form-box">
+                <label for="name" class="feedback-lable">Ваше ім’я *</label>
+                <input type="text" id="name" class="feedback-input" />
+              </div>
+              <div class="form-box">
+                <label for="telephone" class="feedback-lable"
+                  >Ваш номер телефону *</label
+                >
+                <input type="tel" id="telephone" class="feedback-input" />
+              </div>
+              <div class="form-box">
+                <label for="email" class="feedback-lable">Ваш E-mail *</label>
+                <input type="email" id="email" class="feedback-input" />
+              </div>
             </div>
             <div class="bottom-box">
-              <p class="feedback-bottom">
-                Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
-                угодою про конфіденційність та відповідно до Положення та закону
-                про захист даних.
-              </p>
-              <input type="checkbox" id="agree" class="feedback-input" />
-              <label for="agree" class="feedback-lable">Я даю згоду</label>
+              <div class="feedback-info">
+                <p class="feedback-bottom">
+                  Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно
+                  з угодою про конфіденційність та відповідно до Положення та
+                  закону про захист даних.
+                </p>
+                <input type="checkbox" id="agree" class="feedback-input" />
+                <label for="agree" class="feedback-lable">Я даю згоду</label>
+              </div>
+              <button type="submit" class="feedback-bt">надіслати</button>
             </div>
-            <button type="submit" class="feedback-bt">надіслати</button>
           </form>
         </div>
       </section>
@@ -192,8 +196,8 @@
     <footer>
       <section class="footer-nav">
         <div class="container footer-box">
-          <ul class="footer-points">
-            <div class="points-box">
+          <div class="nav-box">
+            <ul class="footer-points">
               <li class="footer-point">
                 <a href="" class="footer-link">Каталог товарів</a>
               </li>
@@ -203,8 +207,8 @@
               <li class="footer-point">
                 <a href="./dropshipping.html" class="footer-link">Дропшипінг</a>
               </li>
-            </div>
-            <div class="points-box">
+            </ul>
+            <ul class="footer-points">
               <li class="footer-point">
                 <a href="./delivery.html" class="footer-link"
                   >Доставка і оплата</a
@@ -216,9 +220,9 @@
               <li class="footer-point">
                 <a href="./about.html" class="footer-link">Про нас</a>
               </li>
-            </div>
-          </ul>
-          <a href="/" class="link-logo"
+            </ul>
+          </div>
+          <a href="../index.html" class="link-logo"
             ><img
               src="../images/logofooter.png"
               alt="atlantika"
@@ -227,19 +231,27 @@
           <ul class="contacts-points">
             <li class="contacts-point">
               <h2 class="contacts-title">Ігор</h2>
-              <a href="tel:+380939205870" class="contacts-link"
-                >+380 93 920 58 70</a
-              ><img src="../images/tel.png" alt="tel" class="contacts-img" />
+              <a href="tel:+380939205870" class="contacts-link">
+                <span>+380 93 920 58 70</span>
+                <img src="../images/tel.png" alt="tel" class="contacts-img"
+              /></a>
             </li>
             <li class="contacts-point">
               <h2 class="contacts-title">Роман</h2>
-              <a href="tel:+380936727478" class="contacts-link"
-                >+380 93 672 74 78</a
-              ><img src="../images/tel.png" alt="tel" class="contacts-img" />
+              <a href="tel:+380936727478" class="contacts-link">
+                <span>+380 93 672 74 78</span>
+                <img src="../images/tel.png" alt="tel" class="contacts-img"
+              /></a>
             </li>
             <li class="contacts-point">
-              <p class="contacts-text">Пн.- пт.: с 10:00 до 19:00</p>
-              <img src="../images/cloсk.png" alt="cloсk" class="contacts-img" />
+              <div class="contacts-schedule">
+                <p class="contacts-text">Пн.- пт.: с 10:00 до 19:00</p>
+                <img
+                  src="../images/cloсk.png"
+                  alt="cloсk"
+                  class="contacts-img"
+                />
+              </div>
             </li>
             <li class="contacts-point">
               <a
