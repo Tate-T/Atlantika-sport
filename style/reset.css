@@ -24,3 +24,7 @@ button{
 blockquote{
     margin: 0;
 }
+
+select{
+    border: none;
+}
