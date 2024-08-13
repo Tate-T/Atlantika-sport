@@ -192,7 +192,8 @@ padding: 17px 32px;
 .sponsors-points{
     display: flex;
     flex-wrap: wrap;
-    gap: 52px;
+    column-gap: 52px;
+    row-gap: 32px;
     justify-content: center;
 }
 
@@ -302,6 +303,11 @@ margin-top: 16px;
 
 .bottom-box{
     display: flex;
+    align-items: center;
+}
+
+#agree{
+    margin-right: 12px;
 }
 
 .feedback-bottom{
@@ -391,6 +397,14 @@ color: var(--text-color);
 
 .contacts-img{
     margin-left: 12px;
+    width: 15px;
+    height: 15px;
+}
+
+.contacts-mark{
+    margin-left: 12px;
+    width: 11px;
+    height: 15px;
 }
 
 .contacts-schedule{
@@ -432,6 +446,7 @@ margin-right: auto;
     padding-top: 20px ;
     padding-bottom: 79px;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .info-title{
@@ -442,16 +457,25 @@ font-size: 50px;
 line-height: 55px; /* 110% */
 margin-top: 40px;
 margin-bottom: 30px;
+display: flex;
+justify-content: flex-start;
 }
 
 .info-text{
     color: var(--editional-text);
 font-size: 16px;
-font-weight: 700;
 line-height: 24px; 
 /* 150% */
 margin-bottom: 30px;
-max-width: ;-width: 579px;
+max-width: 579px;
+}
+
+.antland{
+    color: var(--editional-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
 }
 
 .info-blockquote{
@@ -683,6 +707,7 @@ margin-bottom: 20px;
 .social-points{
 display: flex;
 justify-content: flex-end;
+gap: 4px;
 }
 
 .social-img{
