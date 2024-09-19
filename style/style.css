@@ -120,9 +120,11 @@ font-size: 16px;
 /* main */
 
 .hero{
-    background-image: url(../images/background-main.png) ;
+    background-image: url(../images/background-main.png);
     padding-top: 84px;
     padding-bottom: 39px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-logo{
@@ -201,6 +203,8 @@ padding: 17px 32px;
     background-image: url(../images/background-main2.png);
     padding-top: 105px;
     padding-bottom: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .amongus-title{
@@ -438,6 +442,10 @@ font-size: 12px;
 margin-right: auto;
 }
 
+.info{
+    background-color: #EFEFEF;;
+}
+
 .info-box{
     display: flex;
 }
@@ -619,6 +627,8 @@ line-height: 24px; /* 150% */
     background-image: url(../images/backsystem.png);
     padding-top: 20px ;
     padding-bottom: 133px;
+    background-repeat: no-repeat;
+    background-size: ;
 }
 
 .hero-system-title{
