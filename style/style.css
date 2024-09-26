@@ -493,13 +493,15 @@ font-weight: 700;
 line-height: 24px; /* 120% */
 }
 
-.drugs{
+.protein-hero{
     background-image: url(../images/backdrugs.png);
     padding-top: 20px;
     padding-bottom: 113px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.drugs-title{
+.protein-title{
     color: var(--text-color);
     font-family: "Russo One", sans-serif;
 font-size: 50px;
@@ -558,10 +560,12 @@ line-height: 24px; /* 150% */
 max-width: 528px;
 }
 
-.herodrop{
+.hero-drop{
     padding-top: 20px;
     padding-bottom: 133px;
     background-image: url(../images/backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .herodrop-title{
@@ -628,7 +632,7 @@ line-height: 24px; /* 150% */
     padding-top: 20px ;
     padding-bottom: 133px;
     background-repeat: no-repeat;
-    background-size: ;
+    background-size: cover;
 }
 
 .hero-system-title{
@@ -680,6 +684,8 @@ max-width: 711px;
     background-image: url(../images/locationbackground.png);
     padding-top: 20px;
     padding-bottom: 133px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .location-title{
