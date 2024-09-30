@@ -282,10 +282,16 @@ margin-bottom: 40px;
     margin-bottom: 62px;
 }
 
-.feedback-label{
+.feedback-lable{
     color: var(--editional-text);
     font-size: 15px;
     line-height: 18px; /* 120% */
+}
+
+.star{
+color: #D7143A;
+font-size: 15px;
+line-height: 18px;
 }
 
 #name{
@@ -613,6 +619,7 @@ margin-bottom: 20px;
     color: var(--editional-text);
 font-size: 16px;
 line-height: 24px; /* 150% */
+max-width: 996px;
 }
 
 .dropshipping-top{
