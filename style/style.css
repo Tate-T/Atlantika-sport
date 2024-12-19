@@ -65,13 +65,15 @@ padding-right: 12px ;
     margin-left: auto;
 }
 
-.header-registrs{
-    display: flex;
-    gap: 26px;
+.header-enter{
+width: 19px;
+height: 19.5px;
 }
 
-.header-registr::before{
-
+.header-registrs{
+    display: flex;
+    gap: 11px;
+    align-items: center;
 }
 
 .header-auth{
@@ -93,6 +95,11 @@ text-align: right;
 font-weight: 500;
 margin-right: 5px;
 align-items: flex-end;
+}
+
+.header-cart{
+    width: 25px;
+height: 18px;
 }
 
 .header-price{
@@ -175,15 +182,31 @@ line-height: 20px; /* 142.857% */
 }
 
 .hero-registr{
-color: var(--text-color);
-font-size: 17px;
-font-weight: 700;
-line-height: 24px; /* 141.176% */
-text-transform: uppercase;
-border-radius: 8px;
+    border-radius: 8px;
 border: 1px solid #01A0C6;
 background-color: #01A0C6;
 padding: 17px 32px;
+display: flex;
+gap: 40px;
+align-items: center;
+}
+
+.registr-text{
+color: var(--text-color);
+font-family: Play;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 141.176% */
+text-transform: uppercase;
+}
+
+.registr-icon{
+width: 10px;
+height: 16px;
+fill: #FFF;
+stroke-width: 2px;
+stroke: #FFF;;
 }
 
 .hero-link{
