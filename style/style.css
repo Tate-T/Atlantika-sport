@@ -37,9 +37,22 @@ body{
     margin-bottom: 8px;
 }
 
-.header-icon{
+.header-viber{
     width: 18px;
     height: 18px;
+    fill: #6F40AA;
+}
+
+.header-whatsapp{
+    width: 18px;
+    height: 18px;
+    fill: #2AA71B;
+}
+
+.header-telegram{
+    width: 18px;
+    height: 18px;
+    fill: #049BE4;   
 }
 
 .header-options{
@@ -68,6 +81,7 @@ padding-right: 12px ;
 .header-enter{
 width: 19px;
 height: 19.5px;
+fill: #828282;
 }
 
 .header-registrs{
@@ -100,6 +114,7 @@ align-items: flex-end;
 .header-cart{
     width: 25px;
 height: 18px;
+fill: #AD2808;
 }
 
 .header-price{
@@ -256,15 +271,29 @@ max-width: 522px;
 }
 
 .amongus-bt{
-color: var(--text-color);
-font-size: 17px;
-font-weight: 700;
-line-height: 24px; /* 141.176% */
-text-transform: uppercase;
 border-radius: 8px;
 border: 1px solid #01A0C6;
 background-color: #01A0C6;
 padding: 17px 32px;
+display: flex;
+gap: 30px;
+align-items: center;
+}
+
+.amongus-btext{
+    color: var(--text-color);
+font-size: 17px;
+font-weight: 700;
+line-height: 24px; /* 141.176% */
+text-transform: uppercase;
+}
+
+.amongus-icon{
+    width: 10px;
+    height: 16px;
+    fill: #FFF;
+    stroke-width: 2px;
+    stroke: #FFF;; 
 }
 
 .main-feedback{
@@ -438,16 +467,18 @@ font-size: 13px;
 color: var(--text-color);
 }
 
-.contacts-img{
-    margin-left: 12px;
+.contacts-icons{
+    margin-left: 11px;
     width: 15px;
     height: 15px;
+    fill: var(--button-color);
 }
 
-.contacts-mark{
-    margin-left: 12px;
+.contacts-icon{
+    margin-left: 11px;
     width: 11px;
     height: 15px;
+    fill: var(--button-color);
 }
 
 .contacts-schedule{
@@ -479,6 +510,18 @@ line-height: 22px; /* 157.143% */
 color: #CCC;
 font-size: 12px;
 margin-right: auto;
+}
+
+.networks-icon{
+    width: 15px;
+height: 15px;
+fill: var(--text-color);
+}
+
+.networks-icony{
+    width: 21px;
+height: 15px;
+fill: var(--text-color);
 }
 
 .info{
@@ -779,9 +822,22 @@ justify-content: flex-end;
 gap: 4px;
 }
 
-.social-img{
+.social-viber{
     width: 18px;
     height: 18px;
+    fill: #6F40AA;
+}
+
+.social-whatsapp{
+    width: 18px;
+height: 18px;
+fill: #2AA71B;
+}
+
+.social-telegram{
+    width: 18px;
+height: 18px;
+fill: #049BE4;
 }
 
 .socialinfo-point{
@@ -803,10 +859,14 @@ gap: 4px;
 
 .socialinfo-text{
     color: var(--editional-text);
+    margin-right: 31px;
 }
 
-.socialinfo-img{
+.socialinfo-icon{
     margin-left: 12px;
+    width: 15px;
+height: 15px;
+fill: var(--button-color);
 }
 
 .socialinfo-link{
