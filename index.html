@@ -58,20 +58,20 @@
             ><img src="./images/logo.png" alt="atlantika" class="logo-img"
           /></a>
           <div class="header-registration">
-            <a href="/" class="header-exit">
-            <svg class="header-enter">
-              <use href="./images/symbol-defs.svg#icon-enter"></use>
-            </svg>
-            </a>
+            <button class="header-exit">
+              <svg class="header-enter">
+                <use href="./images/symbol-defs.svg#icon-enter"></use>
+              </svg>
+            </button>
             <ul class="header-registrs">
               <li class="header-registr">
-                <a href="" class="header-auth">Реєстрація</a>
+                <button data-open type="button" class="header-auth">Реєстрація</button>
               </li>
               <li class="header-registr">
                 <p class="header-auth">/</p>
               </li>
               <li class="header-registr">
-                <a href="" class="header-auth">Вхід</a>
+                <button  class="header-auth">Вхід</button>
               </li>
             </ul>
           </div>
@@ -141,7 +141,7 @@
               <svg class="registr-icon">
                 <use href="./images/symbol-defs.svg#icon-arrow"></use>
               </svg>
-             </button>
+            </button>
           </div>
           <a href="" class="hero-link"
             ><img src="./images/mouse.png" alt="mouse" class="hero-img"
@@ -375,7 +375,7 @@
                 <span>+380 93 920 58 70</span>
                 <svg class="contacts-icons">
                   <use href="./images/symbol-defs.svg#icon-tel"></use>
-                </svg>  
+                </svg>
               </a>
             </li>
             <li class="contacts-point">
@@ -399,7 +399,7 @@
               <a
                 href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
                 class="contacts-link"
-                >
+              >
                 <span>Київ, вул. Андрющенко 2/26</span>
                 <svg class="contacts-icon">
                   <use href="./images/symbol-defs.svg#icon-point"></use>
@@ -416,24 +416,43 @@
             <li class="networks-point">
               <a href="" class="networks-link"
                 ><svg class="networks-icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg></a>
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
             </li>
             <li class="networks-point">
               <a href="" class="networks-link"
                 ><svg class="networks-icony">
-                  <use href="./images/symbol-defs.svg#icon-youtube"></use>
-                </svg></a>
+                  <use href="./images/symbol-defs.svg#icon-youtube"></use></svg
+              ></a>
             </li>
             <li class="networks-point">
               <a href="" class="networks-link"
                 ><svg class="networks-icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg></a>
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
             </li>
           </ul>
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hidden">
+      <div data-modal class="modal">
+        <button data-close class="modal-close">
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+          Виконайте вхід, або зареєструйтеся для продовження
+        </p>
+        <div class="modal-box">
+          <button class="modal-enter">Вхід</button>
+          <button class="modal-enter">Реєстрація</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
