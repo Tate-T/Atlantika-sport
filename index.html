@@ -58,20 +58,20 @@
             ><img src="./images/logo.png" alt="atlantika" class="logo-img"
           /></a>
           <div class="header-registration">
-            <button class="header-exit">
+            <button type="button" data-modal-open class="header-exit">
               <svg class="header-enter">
                 <use href="./images/symbol-defs.svg#icon-enter"></use>
               </svg>
             </button>
             <ul class="header-registrs">
               <li class="header-registr">
-                <button data-open type="button" class="header-auth">Реєстрація</button>
+                <button data-modal-open type="button" class="header-auth">Реєстрація</button>
               </li>
               <li class="header-registr">
                 <p class="header-auth">/</p>
               </li>
               <li class="header-registr">
-                <button  class="header-auth">Вхід</button>
+                <button data-login-open type="button" class="header-auth">Вхід</button>
               </li>
             </ul>
           </div>
@@ -437,9 +437,9 @@
         </div>
       </section>
     </footer>
-    <div class="backdrop is-hidden">
-      <div data-modal class="modal">
-        <button data-close class="modal-close">
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
           <svg class="modal-icon">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -453,6 +453,21 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./js/modal.js"></script>
+    <div data-login class="backdrop is-hidden">
+      <div class="login-modal">
+        <h2 class="login-title">Вхід до кабінету</h2>
+        <form class="login-form">
+          <input type="text" class="login-input" name="" id="" placeholder="E-mail">
+          <input type="text" class="login-input" name="" id="" placeholder="Пароль">
+          <button type="subbmit" class="login-bt">Вхід</button>
+        </form>
+        <div class="login-box">
+        <a href="" class="login-link">Забули пароль?</a>
+        <a href="" class="login-link">Реєстрація</a>
+      </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modallogin.js"></script>
   </body>
 </html>

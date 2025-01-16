@@ -904,6 +904,15 @@ justify-content: center; */
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 80px;
+    position: relative;
+}
+
+.modal-close{
+    position: absolute;
+    left: 551px;
+    top: 12px;
+    width: 40px;
+    height: 40px;
 }
 
 .modal-text{
@@ -923,6 +932,7 @@ margin-bottom: 40px;
 }
 
 .modal-enter{
+width: 100%;
 max-width: 230px;
 max-height: 48px;
 color: #01A0C6;
@@ -945,13 +955,77 @@ background: #01A0C6;
 }
 
 .modal-icon{
-    width: 16px;
-height: 16px;
-stroke: #AD2808;
-stroke-width: 1px;
+    width: 28px;
+height: 28px;
+fill: #AD2808;
 }
 
 .is-hidden{
     pointer-events: none;
     opacity: 0;
+}
+
+.login-modal{
+width: 345px;
+height: 316px;
+background: #EFEFEF;
+box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+padding: 25px;
+position: fixed;
+top: 80px;
+left: 971px;
+}
+
+.login-title{
+    color: #878787;
+font-family: "Russo One";
+font-size: 17px;
+line-height: 24px; /* 141.176% */
+text-transform: uppercase;
+margin-bottom: 18px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+gap: 18px;
+align-items: stretch;
+}
+
+.login-input{
+    display: block;
+    height: 48px;
+    color: #878787;
+text-align: center;
+font-size: 16px;
+line-height: 20px; /* 125% */
+}
+
+.login-bt{
+    color: #FFF;
+text-align: center;
+font-size: 17px;
+font-weight: 700;
+line-height: 22px; /* 129.412% */
+border-radius: 8px;
+background: #01A0C6;
+padding: 14px 90px;
+}
+
+.login-box{
+    display: flex;
+    gap: 83px;
+    margin-top: 18px;
+}
+
+.login-link{
+    color: #878787;
+    font-size: 17px;
+    line-height: 24px; /* 141.176% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font; 
 }
