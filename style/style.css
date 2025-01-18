@@ -977,7 +977,8 @@ left: 971px;
 }
 
 .login-title{
-    color: #878787;
+color: #878787;
+text-align: center;
 font-family: "Russo One";
 font-size: 17px;
 line-height: 24px; /* 141.176% */
