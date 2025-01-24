@@ -22,8 +22,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <section class="header-top">
+      <section class="header-top">
+        <div class="container header-top">
           <div class="header-contacts">
             <ul class="header-socials">
               <li class="header-social">
@@ -65,13 +65,17 @@
             </button>
             <ul class="header-registrs">
               <li class="header-registr">
-                <button data-modal-open type="button" class="header-auth">Реєстрація</button>
+                <button data-modal-open type="button" class="header-auth">
+                  Реєстрація
+                </button>
               </li>
               <li class="header-registr">
                 <p class="header-auth">/</p>
               </li>
               <li class="header-registr">
-                <button data-login-open type="button" class="header-auth">Вхід</button>
+                <button data-login-open type="button" class="header-auth">
+                  Вхід
+                </button>
               </li>
             </ul>
           </div>
@@ -84,8 +88,10 @@
             </div>
             <p class="header-price">0.0 грн</p>
           </div>
-        </section>
-        <section class="header-bottom">
+        </div>
+      </section>
+      <section class="header-list">
+        <div class="container header-bottom">
           <nav class="header-nav">
             <ul class="header-points">
               <li class="header-point">
@@ -117,11 +123,11 @@
               </li>
             </ul>
           </nav>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <img src="./images/logomain.png" alt="atlantika" class="hero-logo" />
           <div class="hero-box">
@@ -437,6 +443,13 @@
         </div>
       </section>
     </footer>
+    <div class="scroll-top">
+      <a href="#hero" class="scroll-link">
+        <svg class="scroll-icon">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
@@ -457,14 +470,28 @@
       <div class="login-modal">
         <h2 class="login-title">Вхід до кабінету</h2>
         <form class="login-form">
-          <input type="text" class="login-input" name="" id="" placeholder="E-mail">
-          <input type="text" class="login-input" name="" id="" placeholder="Пароль">
+          <input
+            type="text"
+            class="login-input"
+            name=""
+            id=""
+            placeholder="E-mail"
+            required
+          />
+          <input
+            type="text"
+            class="login-input"
+            name=""
+            id=""
+            placeholder="Пароль"
+            required
+          />
           <button type="subbmit" class="login-bt">Вхід</button>
         </form>
         <div class="login-box">
-        <a href="" class="login-link">Забули пароль?</a>
-        <a href="" class="login-link">Реєстрація</a>
-      </div>
+          <a href="" class="login-link">Забули пароль?</a>
+          <a href="" class="login-link">Реєстрація</a>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

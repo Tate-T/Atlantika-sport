@@ -22,8 +22,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <section class="header-top">
+      <section class="header-top">
+        <div class="container header-top">
           <div class="header-contacts">
             <ul class="header-socials">
               <li class="header-social">
@@ -58,20 +58,24 @@
             ><img src="../images/logo.png" alt="atlantika" class="logo-img"
           /></a>
           <div class="header-registration">
-            <a href="/" class="header-exit">
-            <svg class="header-enter">
-              <use href="../images/symbol-defs.svg#icon-enter"></use>
-            </svg>
-            </a>
+            <button type="button" data-modal-open class="header-exit">
+              <svg class="header-enter">
+                <use href="../images/symbol-defs.svg#icon-enter"></use>
+              </svg>
+            </button>
             <ul class="header-registrs">
               <li class="header-registr">
-                <a href="" class="header-auth">Реєстрація</a>
+                <button data-modal-open type="button" class="header-auth">
+                  Реєстрація
+                </button>
               </li>
               <li class="header-registr">
                 <p class="header-auth">/</p>
               </li>
               <li class="header-registr">
-                <a href="" class="header-auth">Вхід</a>
+                <button data-login-open type="button" class="header-auth">
+                  Вхід
+                </button>
               </li>
             </ul>
           </div>
@@ -84,8 +88,10 @@
             </div>
             <p class="header-price">0.0 грн</p>
           </div>
-        </section>
-        <section class="header-bottom">
+        </div>
+      </section>
+      <section class="header-list">
+        <div class="container header-bottom">
           <nav class="header-nav">
             <ul class="header-points">
               <li class="header-point">
@@ -117,11 +123,11 @@
               </li>
             </ul>
           </nav>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
     <main>
-      <section class="location">
+      <section class="location" id="location">
         <div class="container">
           <ul class="breadcrumb">
             <li class="breadcrumb-main">
@@ -373,5 +379,58 @@
         </div>
       </section>
     </footer>
+    <div class="scroll-top">
+      <a href="#location" class="scroll-link">
+        <svg class="scroll-icon">
+          <use href="../images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
+          <svg class="modal-icon">
+            <use href="../images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+          Виконайте вхід, або зареєструйтеся для продовження
+        </p>
+        <div class="modal-box">
+          <button class="modal-enter">Вхід</button>
+          <button class="modal-enter">Реєстрація</button>
+        </div>
+      </div>
+    </div>
+    <div data-login class="backdrop is-hidden">
+      <div class="login-modal">
+        <h2 class="login-title">Вхід до кабінету</h2>
+        <form class="login-form">
+          <input
+            type="text"
+            class="login-input"
+            name=""
+            id=""
+            placeholder="E-mail"
+            required
+          />
+          <input
+            type="text"
+            class="login-input"
+            name=""
+            id=""
+            placeholder="Пароль"
+            required
+          />
+          <button type="subbmit" class="login-bt">Вхід</button>
+        </form>
+        <div class="login-box">
+          <a href="" class="login-link">Забули пароль?</a>
+          <a href="" class="login-link">Реєстрація</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
+    <script src="../js/modallogin.js"></script>
   </body>
 </html>
