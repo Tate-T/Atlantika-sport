@@ -5,6 +5,10 @@
     --acctent-color: #283761;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Play", sans-serif;
     font-weight: 400;
@@ -91,6 +95,10 @@ height: 19.5px;
 fill: #828282;
 }
 
+.header-enter:hover{
+    fill: var(--button-color);
+}
+
 .header-registrs{
     display: flex;
     gap: 11px;
@@ -103,10 +111,32 @@ text-align: right;
 font-family: "Inter", sans-serif;
 font-size: 14px;
 line-height: 18px; /* 128.571% */
+transition: all 0.5s ease-in;
+}
+
+.header-auth:hover, .header-auth:focus{
+    color: #01A0C6;
+    font-weight: 500;
 }
 
 .header-basket{
     display: flex;
+}
+
+.header-basket:hover .header-cart{
+    fill: var(--button-color);
+}
+
+.header-basket:hover .header-quantity{
+    color: var(--button-color);
+}
+
+.header-quantity:focus{
+    color: var(--button-color);
+}
+
+.header-price:hover,.header-price:focus{
+    color: var(--button-color);
 }
 
 .header-quantity{
@@ -116,12 +146,14 @@ text-align: right;
 font-weight: 500;
 margin-right: 5px;
 align-items: flex-end;
+transition: color 0.5s ease-in;
 }
 
 .header-cart{
     width: 25px;
 height: 18px;
 fill: #AD2808;
+transition: fill 0.5s ease-in;
 }
 
 .header-price{
@@ -131,6 +163,7 @@ font-size: 14px;
 font-weight: 500;
 font-family: "Inter", sans-serif;
 text-decoration-line: underline;
+transition: color 0.5s ease-in;
 }
 
 .header-list{
@@ -148,9 +181,37 @@ text-decoration-line: underline;
     justify-content: center;
 }
 
+.header-point{
+    position: relative;
+}
+
 .header-page{
 color: var(--text-color);
 font-size: 16px;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.header-page.active::after{
+    content: "";
+    width: 1px;
+height: 100%;
+background: #FFF;
+position: absolute;
+top: 0;
+right: -20px;
+}
+
+.header-page.active::before{
+    content: "";
+    width: 1px;
+height: 100%;
+background: #FFF;
+position: absolute;
+top: 0;
+left: -20px;
 }
 
 /* main */
@@ -904,6 +965,16 @@ line-height: 22px; /* 157.143% */
     top: 600px;
     left: 1300px;
     box-shadow: 0px 4px 16px 5px rgba(14, 32, 64, 0.915);
+}
+
+.scroll-link:focus{
+    background-color: #FFF;
+    box-shadow: 0px 4px 16px 5px var(--button-color);
+    outline: none;
+}
+
+.scroll-link:focus .scroll-icon{
+    fill: var(--button-color);
 }
 
 .scroll-icon{
