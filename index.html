@@ -16,6 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>ATLANTIKA</title>
@@ -54,7 +59,7 @@
               </option>
             </select>
           </div>
-          <a href="./index.html" class="header-logo"
+          <a href="./index.html" class="header-logo animate__animated animate__backInDown"
             ><img src="./images/logo.png" alt="atlantika" class="logo-img"
           /></a>
           <div class="header-registration">
@@ -80,7 +85,7 @@
             </ul>
           </div>
           <div class="header-box">
-            <div class="header-basket">
+            <div class="header-basket animate__animated animate__wobble">
               <a href="" class="header-quantity">0</a>
               <svg class="header-cart">
                 <use href="./images/symbol-defs.svg#icon-basket"></use>
@@ -279,8 +284,8 @@
       </section>
       <section class="main-feedback">
         <div class="container">
-          <h2 class="feedback-title">Виникли питання?</h2>
-          <p class="feedback-top">
+          <h2 class="feedback-title" data-aos="zoom-out-down" data-aos-duration="2000">Виникли питання?</h2>
+          <p class="feedback-top" data-aos="fade-right" data-aos-duration="5000">
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
           <form class="feedback-form">
@@ -499,5 +504,9 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/modallogin.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
