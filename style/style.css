@@ -994,9 +994,19 @@ right: 0;
 left: 0;
 background-color: rgba(0, 0, 0, 0.30);
 backdrop-filter: blur(3px);
-/* display: flex;
-align-items: center;
-justify-content: center; */
+opacity: 1;
+transition: opacity 1s ease-in, visibility 1s ease-out;
+visibility: visible;
+}
+
+.is-hidden{
+    pointer-events: none;
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.is-hidden > .modal{
+    transform: translate(-50%, -50%) rotate(360deg) scale(0);
 }
 
 .modal{
@@ -1006,9 +1016,10 @@ justify-content: center; */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0) scale(1);
     padding-top: 80px;
     position: relative;
+    transition:  transform 1s ease-in-out;
 }
 
 .modal-close{
@@ -1062,11 +1073,6 @@ background: #01A0C6;
     width: 28px;
 height: 28px;
 fill: #AD2808;
-}
-
-.is-hidden{
-    pointer-events: none;
-    opacity: 0;
 }
 
 .login-modal{
