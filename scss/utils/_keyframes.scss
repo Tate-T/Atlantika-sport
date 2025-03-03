@@ -1,0 +1,54 @@
+@keyframes header-text{
+    0%{
+        color: var(--text-color);
+        text-shadow: 5px 3px 14px var(--acctent-color);
+    }
+    50%{
+        text-shadow: 5px 3px 8px black;
+    }
+    100%{
+        color: var(--acctent-color);
+        text-shadow: 8px 4px 14px var(--text-color);
+    }
+}
+
+@keyframes change-header{
+    0%{
+        background-color: var(--acctent-color);
+    }
+    100%{
+        background-color: var(--text-color);
+    }
+}
+
+@keyframes shadow-hero{
+    0%{
+       box-shadow: 0px 2px 8px 3px rgb(115, 174, 251); 
+    }
+    50%{
+        box-shadow: 0px 2px 16px 6px rgb(32, 80, 138);
+    }
+    100%{
+        box-shadow: 0px 2px 12px 5px rgb(0, 28, 63);
+    }
+}
+
+@keyframes scroll-spin{
+    0%{
+        transform: translate(0);
+        box-shadow: 0px 4px 10px 5px rgba(99, 143, 219, 0.915);
+    }
+    25%{
+        transform: translate(4px, 5px);
+    }
+    50%{
+        transform: translate(-8px, 7px);
+    }
+    75%{
+        transform: translate(10px, -16px);
+    }
+    100%{
+        transform: translate(-12px, -9px);
+        box-shadow: 0px 4px 28px 9px rgb(0, 28, 63);
+    }
+}
