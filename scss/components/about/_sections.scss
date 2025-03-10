@@ -1,0 +1,51 @@
+.info {
+  background-color: #efefef;
+}
+
+.info-box {
+  display: flex;
+}
+
+.info-block {
+  padding-top: 20px;
+  padding-bottom: 79px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-title {
+  color: $acctent-color;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 50px;
+  line-height: 55px; /* 110% */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info-text {
+  color: $editional-text;
+  font-size: 16px;
+  line-height: 24px;
+  /* 150% */
+  max-width: 579px;
+  margin-top: 24px;
+}
+
+.antland {
+  color: $editional-text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.info-blockquote {
+  color: $editional-text;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}

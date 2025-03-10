@@ -1,0 +1,71 @@
+.hero-drop{
+    padding-top: 20px;
+    padding-bottom: 133px;
+    background-image: url(../images/backdrop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.herodrop-title{
+    color: $text-color;
+    font-family: "Russo One", sans-serif;
+font-size: 50px;
+line-height: 55px; /* 110% */
+margin-top: 92px;
+}
+
+.main-dropshipping{
+    padding-top: 60px;
+}
+
+.dropshipping{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.dropshipping-title{
+    color: $acctent-color;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px; /* 150% */
+margin-bottom: 20px;
+}
+
+.dropshipping-text{
+    color: $editional-text;
+font-size: 16px;
+line-height: 24px; /* 150% */
+max-width: 996px;
+}
+
+.dropshipping-top{
+    color: $editional-text;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 996px;
+}
+
+.dropshipping-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dropshipping-item::before{
+
+}
+
+.dropshipping-points{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drop{
+    color: $editional-text;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}

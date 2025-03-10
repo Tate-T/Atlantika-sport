@@ -1,0 +1,190 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  opacity: 1;
+  transition: opacity 1s ease-in, visibility 1s ease-out;
+  visibility: visible;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-hidden > .modal {
+  transform: translate(-50%, -50%) rotate(360deg) scale(0);
+}
+
+.modal {
+  width: 591px;
+  height: 260px;
+  background-color: $text-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0) scale(1);
+  padding-top: 80px;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  left: 551px;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.modal-text {
+  color: $editional-text;
+  text-align: center;
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.modal-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.modal-enter {
+  width: 100%;
+  max-width: 230px;
+  max-height: 48px;
+  color: #01a0c6;
+  text-align: center;
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 60px;
+  border-radius: 8px;
+  border: 1px solid #01a0c6;
+  background: #fff;
+}
+
+.modal-enter:hover {
+  color: $text-color;
+  border-radius: 8px;
+  background: #01a0c6;
+}
+
+.modal-icon {
+  width: 28px;
+  height: 28px;
+  fill: #ad2808;
+}
+
+.login-modal {
+  width: 345px;
+  height: 316px;
+  background: #efefef;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  position: fixed;
+  top: 113px;
+  left: 971px;
+}
+
+.login-title {
+  color: #878787;
+  text-align: center;
+  font-family: "Russo One";
+  font-size: 17px;
+  line-height: 24px; /* 141.176% */
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.login-input {
+  display: block;
+  height: 48px;
+  color: #878787;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px; /* 125% */
+}
+
+.login-bt {
+  color: $text-color;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px; /* 129.412% */
+  border-radius: 8px;
+  background: #01a0c6;
+  padding: 14px 90px;
+}
+
+.login-box {
+  display: flex;
+  gap: 83px;
+  margin-top: 18px;
+}
+
+.login-link {
+  color: #878787;
+  font-size: 17px;
+  line-height: 24px; /* 141.176% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.scroll-link{
+  width: 50px;
+  height: 50px;
+  background-color: $button-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 600px;
+  left: 1300px;
+  box-shadow: 0px 4px 16px 5px rgba(14, 32, 64, 0.915);
+  animation-name: scroll-spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.scroll-link:focus{
+  background-color: #FFF;
+  box-shadow: 0px 4px 16px 5px $button-color;
+  outline: none;
+}
+
+.scroll-link:focus .scroll-icon{
+  fill: $button-color;
+}
+
+.scroll-icon{
+  width: 20px;
+  height: 20px;
+  fill: #FFF;
+  transform: rotate(-90deg);
+}

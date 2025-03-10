@@ -1,3 +1,13 @@
-@import"./base/reset";
+@import "./base/reset";
 @import "./base/common";
-@import "./utils/vars"
+@import "./utils/vars";
+@import "./utils/keyframes";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/modal";
+@import "./components/about/sections";
+@import "./components/contacts/sections";
+@import "./components/delivery/sections";
+@import "./components/dropshipping/sections";
+@import "./components/main-page/sections";
+@import "./components/system/sections";

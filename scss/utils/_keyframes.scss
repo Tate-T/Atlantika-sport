@@ -1,23 +1,23 @@
 @keyframes header-text{
     0%{
-        color: var(--text-color);
-        text-shadow: 5px 3px 14px var(--acctent-color);
+        color: $text-color;
+        text-shadow: 5px 3px 14px $acctent-color;
     }
     50%{
         text-shadow: 5px 3px 8px black;
     }
     100%{
-        color: var(--acctent-color);
-        text-shadow: 8px 4px 14px var(--text-color);
+        color: $acctent-color;
+        text-shadow: 8px 4px 14px $text-color;
     }
 }
 
 @keyframes change-header{
     0%{
-        background-color: var(--acctent-color);
+        background-color: $acctent-color;
     }
     100%{
-        background-color: var(--text-color);
+        background-color: $text-color;
     }
 }
 
