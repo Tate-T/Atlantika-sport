@@ -4,51 +4,56 @@
   padding-bottom: 39px;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  &__logo {
+    margin-bottom: 310px;
+  }
 
-.hero-logo {
-  margin-bottom: 310px;
-}
+  &__box {
+    display: flex;
+    align-items: flex-end;
+  }
 
-.hero-box {
-  display: flex;
-  align-items: flex-end;
-}
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 200px;
+  }
 
-.hero-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-right: 200px;
-}
+  &__text {
+    color: $text-color;
+    line-height: 26px; /* 144.444% */
+  }
 
-.hero-text {
-  color: $text-color;
-  line-height: 26px; /* 144.444% */
-}
-
-.hero-title {
-  color: $text-color;
-  font-family: "Russo One", sans-serif;
-  font-size: 50px;
-  line-height: 55px; /* 110% */
+  &__title {
+    color: $text-color;
+    font-family: "Russo One", sans-serif;
+    font-size: 50px;
+    line-height: 55px; /* 110% */
+  }
+  &__link {
+    display: block;
+    margin-top: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22px;
+  }
 }
 
 .breadcrumb {
   display: flex;
   gap: 30px;
+  &-main::after {
+  }
+
+  &-link {
+    color: $editional-text;
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+  }
 }
 
-.breadcrumb-main::after {
-}
-
-.breadcrumb-link {
-  color: $editional-text;
-  font-size: 14px;
-  line-height: 20px; /* 142.857% */
-}
-
-.hero-registr {
+.registr {
   border-radius: 8px;
   border: 1px solid #01a0c6;
   background-color: #01a0c6;
@@ -61,98 +66,87 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+  &__text {
+    color: $text-color;
+    font-family: Play;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 141.176% */
+    text-transform: uppercase;
+  }
 
-.registr-text {
-  color: $text-color;
-  font-family: Play;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 141.176% */
-  text-transform: uppercase;
-}
-
-.registr-icon {
-  width: 10px;
-  height: 16px;
-  fill: #fff;
-  stroke-width: 2px;
-  stroke: #fff;
-}
-
-.hero-link {
-  display: block;
-  margin-top: 57px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 22px;
+  &__icon {
+    width: 10px;
+    height: 16px;
+    fill: #fff;
+    stroke-width: 2px;
+    stroke: #fff;
+  }
 }
 
 .sponsors {
   padding: 56px 0;
+  &-points {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 52px;
+    row-gap: 32px;
+    justify-content: center;
+  }
 }
 
-.sponsors-points {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 52px;
-  row-gap: 32px;
-  justify-content: center;
-}
-
-.main-amongus {
+.amongus {
   background-image: url(../images/background-main2.png);
   padding-top: 105px;
   padding-bottom: 130px;
   background-repeat: no-repeat;
   background-size: cover;
+  &__title {
+    color: $text-color;
+    font-family: "Russo One", sans-serif;
+    font-size: 50px;
+    line-height: 55px; /* 110% */
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: $text-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    margin-bottom: 32px;
+    max-width: 522px;
+  }
+
+  &__bt {
+    border-radius: 8px;
+    border: 1px solid #01a0c6;
+    background-color: #01a0c6;
+    padding: 17px 32px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__btext {
+    color: $text-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px; /* 141.176% */
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 16px;
+    fill: #fff;
+    stroke-width: 2px;
+    stroke: #fff;
+  }
 }
 
-.amongus-title {
-  color: $text-color;
-  font-family: "Russo One", sans-serif;
-  font-size: 50px;
-  line-height: 55px; /* 110% */
-  margin-bottom: 24px;
-}
-
-.amongus-text {
-  color: $text-color;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px; /* 130% */
-  margin-bottom: 32px;
-  max-width: 522px;
-}
-
-.amongus-bt {
-  border-radius: 8px;
-  border: 1px solid #01a0c6;
-  background-color: #01a0c6;
-  padding: 17px 32px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.amongus-btext {
-  color: $text-color;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px; /* 141.176% */
-  text-transform: uppercase;
-}
-
-.amongus-icon {
-  width: 10px;
-  height: 16px;
-  fill: #fff;
-  stroke-width: 2px;
-  stroke: #fff;
-}
-
-.main-feedback {
+.feedback {
   padding: 100px 0;
 }
 

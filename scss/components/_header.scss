@@ -73,19 +73,19 @@
     gap: 11px;
     align-items: center;
   }
-}
 
-&__auth {
-  color: $editional-text;
-  text-align: right;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 18px; /* 128.571% */
-  transition: all 0.5s ease-in;
-  &:hover,
-  &:focus {
-    color: #01a0c6;
-    font-weight: 500;
+  &__auth {
+    color: $editional-text;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+    transition: all 0.5s ease-in;
+    &:hover,
+    &:focus {
+      color: #01a0c6;
+      font-weight: 500;
+    }
   }
   &__basket {
     display: flex;
