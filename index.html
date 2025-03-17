@@ -16,114 +16,116 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href="./css/main.min.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>ATLANTIKA</title>
   </head>
   <body>
-    <header>
-      <section class="header-top">
-        <div class="container header-top">
-          <div class="header-contacts">
-            <ul class="header-socials">
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-viber">
+    <header class="header">
+      <section class="top">
+        <div class="container top__container">
+          <div class="top__contacts">
+            <ul class="top__socials">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__viber">
                     <use href="./images/symbol-defs.svg#icon-viber"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-whatsapp">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__whatsapp">
                     <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-telegram">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__telegram">
                     <use href="./images/symbol-defs.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <select name="tel" id="tel" class="header-options">
-              <option value="+380 93 920 58 70" class="header-option">
+            <select name="tel" id="tel" class="top__options">
+              <option value="+380 93 920 58 70" class="top__option">
                 +380 93 920 58 70
               </option>
             </select>
           </div>
-          <a href="./index.html" class="header-logo animate__animated animate__backInDown"
-            ><img src="./images/logo.png" alt="atlantika" class="logo-img"
+          <a
+            href="./index.html"
+            class="logo animate__animated animate__backInDown"
+            ><img src="./images/logo.png" alt="atlantika" class="logo__img"
           /></a>
-          <div class="header-registration">
-            <button type="button" class="header-exit">
-              <svg class="header-enter">
+          <div class="top__registration">
+            <button type="button" class="top__exit">
+              <svg class="top__enter">
                 <use href="./images/symbol-defs.svg#icon-enter"></use>
               </svg>
             </button>
-            <ul class="header-registrs">
-              <li class="header-registr">
-                <button data-modal-open type="button" class="header-auth">
+            <ul class="top__registrs">
+              <li class="top__registr">
+                <button data-modal-open type="button" class="top__auth">
                   Реєстрація
                 </button>
               </li>
-              <li class="header-registr">
-                <p class="header-auth">/</p>
+              <li class="top__registr">
+                <p class="top__auth">/</p>
               </li>
-              <li class="header-registr">
-                <button data-login-open type="button" class="header-auth">
+              <li class="top__registr">
+                <button data-login-open type="button" class="top__auth">
                   Вхід
                 </button>
               </li>
             </ul>
           </div>
-          <div class="header-box">
-            <div class="header-basket animate__animated animate__wobble">
-              <a href="" class="header-quantity">0</a>
-              <svg class="header-cart">
+          <div class="top__box">
+            <div class="top__basket animate__animated animate__wobble">
+              <a href="" class="top__quantity">0</a>
+              <svg class="top__cart">
                 <use href="./images/symbol-defs.svg#icon-basket"></use>
               </svg>
             </div>
-            <a href="" class="header-price">0.0 грн</a>
+            <a href="" class="top__price">0.0 грн</a>
           </div>
         </div>
       </section>
-      <section class="header-list">
-        <div class="container header-bottom">
-          <nav class="header-nav">
-            <ul class="header-points">
-              <li class="header-point">
-                <a href="" class="header-page">Каталог товарів</a>
+      <section class="bottom">
+        <div class="container bottom-container">
+          <nav class="bottom__nav">
+            <ul class="bottom__points">
+              <li class="bottom__point">
+                <a href="" class="bottom__page">Каталог товарів</a>
               </li>
-              <li class="header-point">
-                <a href="./pages/system.html" class="header-page"
+              <li class="bottom__point">
+                <a href="./pages/system.html" class="bottom__page"
                   >Система знижок</a
                 >
               </li>
-              <li class="header-point">
-                <a href="./pages/dropshipping.html" class="header-page"
+              <li class="bottom__point">
+                <a href="./pages/dropshipping.html" class="bottom__page"
                   >Дропшипінг</a
                 >
               </li>
-              <li class="header-point">
-                <a href="./pages/delivery.html" class="header-page"
+              <li class="bottom__point">
+                <a href="./pages/delivery.html" class="bottom__page"
                   >Доставка і оплата</a
                 >
               </li>
-              <li class="header-point">
-                <a href="" class="header-page">Акції</a>
+              <li class="bottom__point">
+                <a href="" class="bottom__page">Акції</a>
               </li>
-              <li class="header-point">
-                <a href="./pages/contacts.html" class="header-page">Контакти</a>
+              <li class="bottom__point">
+                <a href="./pages/contacts.html" class="bottom__page">Контакти</a>
               </li>
-              <li class="header-point">
-                <a href="./pages/about.html" class="header-page">Про нас</a>
+              <li class="bottom__point">
+                <a href="./pages/about.html" class="bottom__page">Про нас</a>
               </li>
             </ul>
           </nav>
@@ -283,8 +285,18 @@
       </section>
       <section class="main-feedback">
         <div class="container">
-          <h2 class="feedback-title" data-aos="zoom-out-down" data-aos-duration="2000">Виникли питання?</h2>
-          <p class="feedback-top" data-aos="fade-right" data-aos-duration="5000">
+          <h2
+            class="feedback-title"
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          >
+            Виникли питання?
+          </h2>
+          <p
+            class="feedback-top"
+            data-aos="fade-right"
+            data-aos-duration="5000"
+          >
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
           <form class="feedback-form">
@@ -323,7 +335,7 @@
                   id="email"
                   class="feedback-input"
                   required
-                  />
+                />
               </div>
             </div>
             <div class="bottom-box">
@@ -333,7 +345,12 @@
                   з угодою про конфіденційність та відповідно до Положення та
                   закону про захист даних.
                 </p>
-                <input type="checkbox" id="agree" class="feedback-input" required/>
+                <input
+                  type="checkbox"
+                  id="agree"
+                  class="feedback-input"
+                  required
+                />
                 <label for="agree" class="feedback-lable">Я даю згоду</label>
               </div>
               <button type="submit" class="feedback-bt">надіслати</button>
