@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.location-title{
+.location__title{
 color: $text-color;
 font-family: "Russo One", sans-serif;
 font-size: 50px;
@@ -14,23 +14,23 @@ line-height: 55px; /* 110% */
 margin-top: 92px;
 }
 
-.main-social{
+.social{
     padding: 60px 0;
 }
 
-.social{
+.social__box{
     display: flex;
 }
 
-.social-map{
+.social__map{
     margin-right: 85px;
 }
 
-.social-box{
+.social__box{
     margin: auto 0;
 }
 
-.social-title{
+.social__title{
     color: $acctent-color;
 font-size: 20px;
 font-weight: 700;
@@ -38,64 +38,64 @@ line-height: 30px; /* 150% */
 margin-bottom: 20px;
 }
 
-.social-points{
+.social__points{
 display: flex;
 justify-content: flex-end;
 gap: 4px;
 }
 
-.social-viber{
+.social__viber{
     width: 18px;
     height: 18px;
     fill: #6F40AA;
 }
 
-.social-whatsapp{
+.social__whatsapp{
     width: 18px;
 height: 18px;
 fill: #2AA71B;
 }
 
-.social-telegram{
+.social__telegram{
     width: 18px;
 height: 18px;
 fill: #049BE4;
 }
 
-.socialinfo-point{
+.socialinfo__point{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
 }
 
-.socialinfo-point:nth-child(2){
+.socialinfo__point:nth-child(2){
     margin-top: 12px;
 }
 
-.socialinfo-point:nth-child(3){
+.socialinfo__point:nth-child(3){
     justify-content: center;
     margin-bottom: 25px;
     margin-top: 13px;
 }
 
-.socialinfo-text{
+.socialinfo__text{
     color: $editional-text;
     margin-right: 31px;
 }
 
-.socialinfo-icon{
+.socialinfo__icon{
     margin-left: 12px;
     width: 15px;
 height: 15px;
 fill: $button-color;
 }
 
-.socialinfo-link{
+.socialinfo__link{
     color: $editional-text;
 }
 
-.socialinfo-schedule{
+.socialinfo__schedule{
     color: $editional-text;
 font-size: 14px;
 line-height: 22px; /* 157.143% */

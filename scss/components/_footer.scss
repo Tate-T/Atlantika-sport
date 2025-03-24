@@ -1,117 +1,120 @@
-footer {
+.footer {
   background-color: #000;
+  &__box {
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+  
+  &__nav {
+    display: flex;
+  }
+  
+  &__nav__box {
+    display: flex;
+    gap: 104px;
+  }
+  
+  &__points {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  &__link {
+    color: $text-color;
+    font-size: 13px;
+  }
+  
+  &__logo {
+    margin-left: 138px;
+    margin-right: 186px;
+  }
 }
 
-.footer-nav {
-  padding-top: 56px;
-  padding-bottom: 50px;
-}
 
-.footer-box {
-  display: flex;
-}
 
-.nav-box {
-  display: flex;
-  gap: 104px;
-}
 
-.footer-points {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 18px;
-}
 
-.footer-link {
-  color: $text-color;
-  font-size: 13px;
-}
-
-.link-logo {
-  margin-left: 138px;
-  margin-right: 186px;
-}
-
-.contacts-point:nth-child(2) {
-  margin-top: 11px;
-}
-
-.contacts-point:nth-child(3) {
-  justify-content: flex-end;
-  margin-bottom: 25px;
-  margin-top: 13px;
-}
-
-.contacts-point {
+.contacts__point {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &:nth-child(2) {
+    margin-top: 11px;
+  }
+  
+  &:nth-child(3) {
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-top: 13px;
+  }
 }
 
-.contacts-title {
+.contacts__title {
   color: $text-color;
   font-size: 18px;
   font-weight: 400px;
 }
 
-.contacts-link {
+.contacts__link {
   color: $text-color;
 }
 
-.contacts-icons {
+.contacts__icons {
   margin-left: 11px;
   width: 15px;
   height: 15px;
   fill: $button-color;
 }
 
-.contacts-icon {
+.contacts__icon {
   margin-left: 11px;
   width: 11px;
   height: 15px;
   fill: $button-color;
 }
 
-.contacts-schedule {
+.contacts__schedule {
   display: flex;
   justify-content: flex-end;
 }
 
-.contacts-text {
+.contacts__text {
   color: #efefef;
   font-size: 14px;
   line-height: 22px; /* 157.143% */
 }
 
-.footer-networks {
+.networks {
   padding-top: 16px;
   padding-bottom: 36px;
+  &__box {
+    display: flex;
+  }
+  
+  &__points {
+    display: flex;
+    gap: 15px;
+  }
+  
+  &__text {
+    color: #ccc;
+    font-size: 12px;
+    margin-right: auto;
+  }
+  
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: $text-color;
+  }
+  
+  &__icons {
+    width: 21px;
+    height: 15px;
+    fill: $text-color;
+  }
 }
 
-.networks-box {
-  display: flex;
-}
 
-.networks-points {
-  display: flex;
-  gap: 15px;
-}
-
-.networks-text {
-  color: #ccc;
-  font-size: 12px;
-  margin-right: auto;
-}
-
-.networks-icon {
-  width: 15px;
-  height: 15px;
-  fill: $text-color;
-}
-
-.networks-icony {
-  width: 21px;
-  height: 15px;
-  fill: $text-color;
-}

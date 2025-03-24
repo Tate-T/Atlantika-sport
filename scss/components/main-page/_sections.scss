@@ -43,10 +43,8 @@
 .breadcrumb {
   display: flex;
   gap: 30px;
-  &-main::after {
-  }
 
-  &-link {
+  &__link {
     color: $editional-text;
     font-size: 14px;
     line-height: 20px; /* 142.857% */
@@ -69,7 +67,7 @@
   &__text {
     color: $text-color;
     font-family: Play;
-    font-size: 17px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 141.176% */
@@ -87,7 +85,7 @@
 
 .sponsors {
   padding: 56px 0;
-  &-points {
+  &__points {
     display: flex;
     flex-wrap: wrap;
     column-gap: 52px;
@@ -148,48 +146,80 @@
 
 .feedback {
   padding: 100px 0;
-}
+  &__title {
+    color: $acctent-color;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-size: 50px;
+    line-height: 55px; /* 110% */
+    margin-bottom: 16px;
+  }
 
-.feedback-title {
-  color: $acctent-color;
-  text-align: center;
-  font-family: "Russo One", sans-serif;
-  font-size: 50px;
-  line-height: 55px; /* 110% */
-  margin-bottom: 16px;
-}
+  &__top {
+    color: $editional-text;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px; /* 125% */
+    margin-bottom: 40px;
+  }
 
-.feedback-top {
-  color: $editional-text;
-  text-align: center;
-  font-size: 24px;
-  line-height: 30px; /* 125% */
-  margin-bottom: 40px;
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
 
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-}
+  &__points {
+    display: flex;
+    gap: 38px;
+    justify-content: space-between;
+  }
 
-.form-points {
-  display: flex;
-  gap: 38px;
-  justify-content: space-between;
-}
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+  }
 
-.form-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 62px;
-}
+  &__lable {
+    color: $editional-text;
+    font-size: 15px;
+    line-height: 18px; /* 120% */
+  }
 
-.feedback-lable {
-  color: $editional-text;
-  font-size: 15px;
-  line-height: 18px; /* 120% */
-}
+  &__input::before &__input {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    margin-top: 16px;
+  }
 
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info__text {
+    color: $editional-text;
+    font-size: 15px;
+    line-height: 18px; /* 120% */
+    max-width: 692px;
+    margin-bottom: 20px;
+  }
+
+  &__bt {
+    color: $text-color;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px; /* 141.176% */
+    text-transform: uppercase;
+    padding: 17px 40px;
+    border-radius: 8px;
+    border: 1px solid #01a0c6;
+    background-color: #01a0c6;
+    margin-left: 329px;
+  }
+}
 .star {
   color: #d7143a;
   font-size: 15px;
@@ -213,41 +243,6 @@
   height: auto;
   padding: 12px 22px;
 }
-
-.feedback-input::before .feedback-input {
-  color: #000;
-  font-size: 16px;
-  line-height: 24px; /* 150% */
-  margin-top: 16px;
-}
-
-.bottom-box {
-  display: flex;
-  align-items: center;
-}
-
 #agree {
   margin-right: 12px;
-}
-
-.feedback-bottom {
-  color: $editional-text;
-  font-size: 15px;
-  line-height: 18px; /* 120% */
-  max-width: 692px;
-  margin-bottom: 20px;
-}
-
-.feedback-bt {
-  color: $text-color;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px; /* 141.176% */
-  text-transform: uppercase;
-  padding: 17px 40px;
-  border-radius: 8px;
-  border: 1px solid #01a0c6;
-  background-color: #01a0c6;
-  margin-left: 329px;
 }

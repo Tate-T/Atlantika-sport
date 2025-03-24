@@ -122,7 +122,9 @@
                 <a href="" class="bottom__page">Акції</a>
               </li>
               <li class="bottom__point">
-                <a href="./pages/contacts.html" class="bottom__page">Контакти</a>
+                <a href="./pages/contacts.html" class="bottom__page"
+                  >Контакти</a
+                >
               </li>
               <li class="bottom__point">
                 <a href="./pages/about.html" class="bottom__page">Про нас</a>
@@ -135,7 +137,7 @@
     <main>
       <section class="hero" id="hero">
         <div class="container hero__container">
-          <img src="./images/logomain.png" alt="atlantika" class="hero-logo" />
+          <img src="./images/logomain.png" alt="atlantika" class="hero__logo" />
           <div class="hero__box">
             <div class="hero__info">
               <p class="hero__text">
@@ -338,9 +340,9 @@
                 />
               </div>
             </div>
-            <div class="bottom-box">
+            <div class="feedback__bottom">
               <div class="feedback__info">
-                <p class="feedback__bottom">
+                <p class="feedback__info__text">
                   Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно
                   з угодою про конфіденційність та відповідно до Положення та
                   закону про захист даних.
@@ -359,79 +361,81 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section class="footer-nav">
-        <div class="container footer-box">
-          <div class="nav-box">
-            <ul class="footer-points">
-              <li class="footer-point">
-                <a href="" class="footer-link">Каталог товарів</a>
+    <footer class="footer">
+      <section class="footer__box">
+        <div class="container footer__nav">
+          <div class="footer__nav__box">
+            <ul class="footer__points">
+              <li class="footer__point">
+                <a href="" class="footer__link">Каталог товарів</a>
               </li>
-              <li class="footer-point">
-                <a href="./pages/system.html" class="footer-link"
+              <li class="footer__point">
+                <a href="./pages/system.html" class="footer__link"
                   >Система знижок</a
                 >
               </li>
-              <li class="footer-point">
-                <a href="./pages/dropshipping.html" class="footer-link"
+              <li class="footer__point">
+                <a href="./pages/dropshipping.html" class="footer__link"
                   >Дропшипінг</a
                 >
               </li>
             </ul>
-            <ul class="footer-points">
-              <li class="footer-point">
-                <a href="./pages/delivery.html" class="footer-link"
+            <ul class="footer__points">
+              <li class="footer__point">
+                <a href="./pages/delivery.html" class="footer__link"
                   >Доставка і оплата</a
                 >
               </li>
-              <li class="footer-point">
-                <a href="./pages/contacts.html" class="footer-link">Контакти</a>
+              <li class="footer__point">
+                <a href="./pages/contacts.html" class="footer__link"
+                  >Контакти</a
+                >
               </li>
-              <li class="footer-point">
-                <a href="./pages/about.html" class="footer-link">Про нас</a>
+              <li class="footer__point">
+                <a href="./pages/about.html" class="footer__link">Про нас</a>
               </li>
             </ul>
           </div>
-          <a href="./index.html" class="link-logo"
+          <a href="./index.html" class="footer__logo"
             ><img
               src="./images/logofooter.png"
               alt="atlantika"
-              class="footer-logo"
+              class="footer__logo__img"
           /></a>
-          <ul class="contacts-points">
-            <li class="contacts-point">
-              <h2 class="contacts-title">Ігор</h2>
-              <a href="tel:+380939205870" class="contacts-link">
+          <ul class="contacts">
+            <li class="contacts__point">
+              <h2 class="contacts__title">Ігор</h2>
+              <a href="tel:+380939205870" class="contacts__link">
                 <span>+380 93 920 58 70</span>
-                <svg class="contacts-icons">
+                <svg class="contacts__icons">
                   <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-point">
-              <h2 class="contacts-title">Роман</h2>
-              <a href="tel:+380936727478" class="contacts-link">
+            <li class="contacts__point">
+              <h2 class="contacts__title">Роман</h2>
+              <a href="tel:+380936727478" class="contacts__link">
                 <span>+380 93 672 74 78</span>
-                <svg class="contacts-icons">
+                <svg class="contacts__icons">
                   <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-point">
-              <div class="contacts-schedule">
-                <p class="contacts-text">Пн.- пт.: с 10:00 до 19:00</p>
-                <svg class="contacts-icons">
+            <li class="contacts__point">
+              <div class="contacts__schedule">
+                <p class="contacts__text">Пн.- пт.: с 10:00 до 19:00</p>
+                <svg class="contacts__icons">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
             </li>
-            <li class="contacts-point">
+            <li class="contacts__point">
               <a
                 href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
-                class="contacts-link"
+                class="contacts__link"
               >
                 <span>Київ, вул. Андрющенко 2/26</span>
-                <svg class="contacts-icon">
+                <svg class="contacts__icon">
                   <use href="./images/symbol-defs.svg#icon-point"></use>
                 </svg>
               </a>
@@ -439,25 +443,25 @@
           </ul>
         </div>
       </section>
-      <section class="footer-networks">
-        <div class="container networks-box">
-          <p class="networks-text">ATLANTIKA.BIZ © 2022</p>
-          <ul class="networks-points">
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icon">
+      <section class="footer__networks">
+        <div class="container networks__box">
+          <p class="networks__text">ATLANTIKA.BIZ © 2022</p>
+          <ul class="networks__points">
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icony">
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
                   <use href="./images/symbol-defs.svg#icon-youtube"></use></svg
               ></a>
             </li>
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icon">
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
                   <use
                     href="./images/symbol-defs.svg#icon-instagram"
                   ></use></svg
@@ -467,36 +471,36 @@
         </div>
       </section>
     </footer>
-    <div class="scroll-top">
-      <a href="#hero" class="scroll-link">
-        <svg class="scroll-icon">
+    <div class="scroll__top">
+      <a href="#hero" class="scroll__link">
+        <svg class="scroll__icon">
           <use href="./images/symbol-defs.svg#icon-arrow"></use>
         </svg>
       </a>
     </div>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" data-modal-close class="modal-close">
-          <svg class="modal-icon">
+        <button type="button" data-modal-close class="modal__close">
+          <svg class="modal__icon">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-text">
+        <p class="modal__text">
           Виконайте вхід, або зареєструйтеся для продовження
         </p>
-        <div class="modal-box">
-          <button class="modal-enter">Вхід</button>
-          <button class="modal-enter">Реєстрація</button>
+        <div class="modal__box">
+          <button class="modal__enter">Вхід</button>
+          <button class="modal__enter">Реєстрація</button>
         </div>
       </div>
     </div>
     <div data-login class="backdrop is-hidden">
-      <div class="login-modal">
-        <h2 class="login-title">Вхід до кабінету</h2>
-        <form class="login-form">
+      <div class="login">
+        <h2 class="login__title">Вхід до кабінету</h2>
+        <form class="login__form">
           <input
             type="text"
-            class="login-input"
+            class="login__input"
             name=""
             id=""
             placeholder="E-mail"
@@ -504,17 +508,17 @@
           />
           <input
             type="text"
-            class="login-input"
+            class="login__input"
             name=""
             id=""
             placeholder="Пароль"
             required
           />
-          <button type="subbmit" class="login-bt">Вхід</button>
+          <button type="subbmit" class="login__bt">Вхід</button>
         </form>
-        <div class="login-box">
-          <a href="" class="login-link">Забули пароль?</a>
-          <a href="" class="login-link">Реєстрація</a>
+        <div class="login__box">
+          <a href="" class="login__link">Забули пароль?</a>
+          <a href="" class="login__link">Реєстрація</a>
         </div>
       </div>
     </div>
