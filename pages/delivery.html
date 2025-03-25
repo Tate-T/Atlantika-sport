@@ -20,105 +20,109 @@
     <title>ATLANTIKA</title>
   </head>
   <body>
-    <header>
-      <section class="header-top">
-        <div class="container header-top">
-          <div class="header-contacts">
-            <ul class="header-socials">
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-viber">
+    <header class="header">
+      <section class="top">
+        <div class="container top__container">
+          <div class="top__contacts">
+            <ul class="top__socials">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__viber">
                     <use href="../images/symbol-defs.svg#icon-viber"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-whatsapp">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__whatsapp">
                     <use href="../images/symbol-defs.svg#icon-whatsapp"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-social">
-                <a href="" class="header-link">
-                  <svg class="header-telegram">
+              <li class="top__social">
+                <a href="" class="top__link">
+                  <svg class="top__telegram">
                     <use href="../images/symbol-defs.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <select name="tel" id="tel" class="header-options">
-              <option value="+380 93 920 58 70" class="header-option">
+            <select name="tel" id="tel" class="top__options">
+              <option value="+380 93 920 58 70" class="top__option">
                 +380 93 920 58 70
               </option>
             </select>
           </div>
-          <a href="../index.html" class="header-logo"
-            ><img src="../images/logo.png" alt="atlantika" class="logo-img"
+          <a
+            href="../index.html"
+            class="logo animate__animated animate__backInDown"
+            ><img src="../images/logo.png" alt="atlantika" class="logo__img"
           /></a>
-          <div class="header-registration">
-            <button type="button" data-modal-open class="header-exit">
-              <svg class="header-enter">
+          <div class="top__registration">
+            <button type="button" class="top__exit">
+              <svg class="top__enter">
                 <use href="../images/symbol-defs.svg#icon-enter"></use>
               </svg>
             </button>
-            <ul class="header-registrs">
-              <li class="header-registr">
-                <button data-modal-open type="button" class="header-auth">
+            <ul class="top__registrs">
+              <li class="top__registr">
+                <button data-modal-open type="button" class="top__auth">
                   Реєстрація
                 </button>
               </li>
-              <li class="header-registr">
-                <p class="header-auth">/</p>
+              <li class="top__registr">
+                <p class="top__auth">/</p>
               </li>
-              <li class="header-registr">
-                <button data-login-open type="button" class="header-auth">
+              <li class="top__registr">
+                <button data-login-open type="button" class="top__auth">
                   Вхід
                 </button>
               </li>
             </ul>
           </div>
-          <div class="header-box">
-            <div class="header-basket">
-              <a href="" class="header-quantity">0</a>
-              <svg class="header-cart">
+          <div class="top__box">
+            <div class="top__basket animate__animated animate__wobble">
+              <a href="" class="top__quantity">0</a>
+              <svg class="top__cart">
                 <use href="../images/symbol-defs.svg#icon-basket"></use>
               </svg>
             </div>
-            <a href="" class="header-price">0.0 грн</a>
+            <a href="" class="top__price">0.0 грн</a>
           </div>
         </div>
       </section>
-      <section class="header-list">
-        <div class="container header-bottom">
-          <nav class="header-nav">
-            <ul class="header-points">
-              <li class="header-point">
-                <a href="" class="header-page">Каталог товарів</a>
+      <section class="bottom">
+        <div class="container bottom-container">
+          <nav class="bottom__nav">
+            <ul class="bottom__points">
+              <li class="bottom__point">
+                <a href="" class="bottom__page">Каталог товарів</a>
               </li>
-              <li class="header-point">
-                <a href="./system.html" class="header-page"
+              <li class="bottom__point">
+                <a href="./system.html" class="bottom__page"
                   >Система знижок</a
                 >
               </li>
-              <li class="header-point">
-                <a href="./dropshipping.html" class="header-page"
+              <li class="bottom__point">
+                <a href="./dropshipping.html" class="bottom__page"
                   >Дропшипінг</a
                 >
               </li>
-              <li class="header-point">
-                <a href="./delivery.html" class="header-page active"
+              <li class="bottom__point">
+                <a href="./delivery.html" class="bottom__page"
                   >Доставка і оплата</a
                 >
               </li>
-              <li class="header-point">
-                <a href="" class="header-page">Акції</a>
+              <li class="bottom__point">
+                <a href="" class="bottom__page">Акції</a>
               </li>
-              <li class="header-point">
-                <a href="./contacts.html" class="header-page">Контакти</a>
+              <li class="bottom__point">
+                <a href="./contacts.html" class="bottom__page"
+                  >Контакти</a
+                >
               </li>
-              <li class="header-point">
-                <a href="./about.html" class="header-page">Про нас</a>
+              <li class="bottom__point">
+                <a href="./about.html" class="bottom__page">Про нас</a>
               </li>
             </ul>
           </nav>
@@ -126,63 +130,63 @@
       </section>
     </header>
     <main>
-      <section class="protein-hero" id="delivery">
-        <div class="container">
+      <section class="protein" id="delivery">
+        <div class="container protein__container">
           <ul class="breadcrumb">
-            <li class="breadcrumb-main">
+            <li class="breadcrumb__main">
               <a
                 href="../index.html"
-                class="breadcrumb-link"
+                class="breadcrumb__link"
                 style="color: #c2c2c2"
                 >Головна</a
               >
             </li>
-            <li class="breadcrumb-point">
-              <a href="./delivery.html" class="breadcrumb-link"
+            <li class="breadcrumb__point">
+              <a href="./delivery.html" class="breadcrumb__link"
                 >Доставка і оплата</a
               >
             </li>
           </ul>
-          <h1 class="protein-title">Доставка і оплата</h1>
+          <h1 class="protein__title">Доставка і оплата</h1>
         </div>
       </section>
-      <section class="main-delivery">
-        <div class="container delivery">
-          <div class="pay-box">
-            <h2 class="pay-title">Способи оплати</h2>
-            <ul class="pay-points">
-              <li class="pay-point">
-                <p class="pay-text">
+      <section class="delivery">
+        <div class="container delivery__container">
+          <div class="pay">
+            <h2 class="pay__title">Способи оплати</h2>
+            <ul class="pay__points">
+              <li class="pay__point">
+                <p class="pay__text">
                   Оплата здійснюється після підтвердження менеджером Вашого
                   замовлення такими способами:
                 </p>
               </li>
-              <li class="pay-point">
-                <p class="pay-text">
+              <li class="pay__point">
+                <p class="pay__text">
                   Передплата на картку Приват банку, Моно банку, Розрахунковий
                   рахунок.
                 </p>
               </li>
             </ul>
           </div>
-          <div class="delivery-box">
-            <h2 class="delivery-title">Доставка</h2>
-            <ul class="delivery-points">
-              <li class="delivery-point">
-                <p class="delivery-text">
+          <div class="delivery__box">
+            <h2 class="delivery__title">Доставка</h2>
+            <ul class="delivery__points">
+              <li class="delivery__point">
+                <p class="delivery__text">
                   Доставка здійснюється Новою поштою за тарифами перевізника.
                 </p>
               </li>
-              <li class="delivery-point">
-                <p class="delivery-text">
+              <li class="delivery__point">
+                <p class="delivery__text">
                   Також можливий самовивіз у Києві за адресою:
                 </p>
               </li>
-              <li class="delivery-addres">
-                <p class="delivery-text">Андрющенко 2/26.</p>
+              <li class="delivery__addres">
+                <p class="delivery__text">Андрющенко 2/26.</p>
               </li>
-              <li class="delivery-point">
-                <p class="delivery-text">
+              <li class="delivery__point">
+                <p class="delivery__text">
                   Надсилання товару протягом 1-2 днів з моменту підтвердження
                   замовлення менеджером.
                 </p>
@@ -191,140 +195,157 @@
           </div>
         </div>
       </section>
-      <section class="main-feedback">
-        <div class="container">
-          <h2 class="feedback-title">Виникли питання?</h2>
-          <p class="feedback-top">
+      <section class="feedback">
+        <div class="container feedback__container">
+          <h2
+            class="feedback__title"
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          >
+            Виникли питання?
+          </h2>
+          <p
+            class="feedback__top"
+            data-aos="fade-right"
+            data-aos-duration="5000"
+          >
             Якщо у вас виникли питання, ми обов'язково на все відповімо
           </p>
-          <form class="feedback-form">
-            <div class="form-points">
-              <div class="form-box">
-                <label for="name" class="feedback-lable"
+          <form class="feedback__form">
+            <div class="feedback__points">
+              <div class="feedback__box">
+                <label for="name" class="feedback__lable"
                   >Ваше ім’я <span class="star">*</span></label
                 >
                 <input
                   type="text"
                   id="name"
                   placeholder="Ігор"
-                  class="feedback-input"
+                  class="feedback__input"
                   required
                 />
               </div>
-              <div class="form-box">
-                <label for="telephone" class="feedback-lable"
+              <div class="feedback__box">
+                <label for="telephone" class="feedback__lable"
                   >Ваш номер телефону <span class="star">*</span></label
                 >
                 <input
                   type="tel"
                   id="telephone"
                   placeholder="+380 (50) 777 74 56"
-                  class="feedback-input"
+                  class="feedback__input"
                   required
                 />
               </div>
-              <div class="form-box">
-                <label for="email" class="feedback-lable"
+              <div class="feedback__box">
+                <label for="email" class="feedback__lable"
                   >Ваш E-mail <span class="star">*</span></label
                 >
                 <input
                   type="email"
                   placeholder="Igor@gmail.com.ua"
                   id="email"
-                  class="feedback-input"
+                  class="feedback__input"
                   required
                 />
               </div>
             </div>
-            <div class="bottom-box">
-              <div class="feedback-info">
-                <p class="feedback-bottom">
+            <div class="feedback__bottom">
+              <div class="feedback__info">
+                <p class="feedback__info__text">
                   Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно
                   з угодою про конфіденційність та відповідно до Положення та
                   закону про захист даних.
                 </p>
-                <input type="checkbox" id="agree" class="feedback-input" required/>
-                <label for="agree" class="feedback-lable">Я даю згоду</label>
+                <input
+                  type="checkbox"
+                  id="agree"
+                  class="feedback__input"
+                  required
+                />
+                <label for="agree" class="feedback__lable">Я даю згоду</label>
               </div>
-              <button type="submit" class="feedback-bt">надіслати</button>
+              <button type="submit" class="feedback__bt">надіслати</button>
             </div>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="footer-nav">
-        <div class="container footer-box">
-          <div class="nav-box">
-            <ul class="footer-points">
-              <li class="footer-point">
-                <a href="" class="footer-link">Каталог товарів</a>
+    <footer class="footer">
+      <section class="footer__box">
+        <div class="container footer__nav">
+          <div class="footer__nav__box">
+            <ul class="footer__points">
+              <li class="footer__point">
+                <a href="" class="footer__link">Каталог товарів</a>
               </li>
-              <li class="footer-point">
-                <a href="./system.html" class="footer-link"
+              <li class="footer__point">
+                <a href="/system.html" class="footer__link"
                   >Система знижок</a
                 >
               </li>
-              <li class="footer-point">
-                <a href="./dropshipping.html" class="footer-link"
+              <li class="footer__point">
+                <a href="/dropshipping.html" class="footer__link"
                   >Дропшипінг</a
                 >
               </li>
             </ul>
-            <ul class="footer-points">
-              <li class="footer-point">
-                <a href="./delivery.html" class="footer-link"
+            <ul class="footer__points">
+              <li class="footer__point">
+                <a href="/delivery.html" class="footer__link"
                   >Доставка і оплата</a
                 >
               </li>
-              <li class="footer-point">
-                <a href="./contacts.html" class="footer-link">Контакти</a>
+              <li class="footer__point">
+                <a href="/contacts.html" class="footer__link"
+                  >Контакти</a
+                >
               </li>
-              <li class="footer-point">
-                <a href="./about.html" class="footer-link">Про нас</a>
+              <li class="footer__point">
+                <a href="/about.html" class="footer__link">Про нас</a>
               </li>
             </ul>
           </div>
-          <a href="../index.html" class="link-logo"
+          <a href="./index.html" class="footer__logo"
             ><img
               src="../images/logofooter.png"
               alt="atlantika"
-              class="footer-logo"
+              class="footer__logo__img"
           /></a>
-          <ul class="contacts-points">
-            <li class="contacts-point">
-              <h2 class="contacts-title">Ігор</h2>
-              <a href="tel:+380939205870" class="contacts-link">
+          <ul class="contacts">
+            <li class="contacts__point">
+              <h2 class="contacts__title">Ігор</h2>
+              <a href="tel:+380939205870" class="contacts__link">
                 <span>+380 93 920 58 70</span>
-                <svg class="contacts-icons">
-                  <use href="../images/symbol-defs.svg#icon-tel"></use>
-                </svg>  
-              </a>
-            </li>
-            <li class="contacts-point">
-              <h2 class="contacts-title">Роман</h2>
-              <a href="tel:+380936727478" class="contacts-link">
-                <span>+380 93 672 74 78</span>
-                <svg class="contacts-icons">
-                  <use href="../images/symbol-defs.svg#icon-tel"></use>
+                <svg class="contacts__icons">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-point">
-              <div class="contacts-schedule">
-                <p class="contacts-text">Пн.- пт.: с 10:00 до 19:00</p>
-                <svg class="contacts-icons">
+            <li class="contacts__point">
+              <h2 class="contacts__title">Роман</h2>
+              <a href="tel:+380936727478" class="contacts__link">
+                <span>+380 93 672 74 78</span>
+                <svg class="contacts__icons">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__point">
+              <div class="contacts__schedule">
+                <p class="contacts__text">Пн.- пт.: с 10:00 до 19:00</p>
+                <svg class="contacts__icons">
                   <use href="../images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
             </li>
-            <li class="contacts-point">
+            <li class="contacts__point">
               <a
                 href="https://maps.app.goo.gl/gMvxKWDu9DUM8VZRA"
-                class="contacts-link"
-                >
+                class="contacts__link"
+              >
                 <span>Київ, вул. Андрющенко 2/26</span>
-                <svg class="contacts-icon">
+                <svg class="contacts__icon">
                   <use href="../images/symbol-defs.svg#icon-point"></use>
                 </svg>
               </a>
@@ -332,62 +353,64 @@
           </ul>
         </div>
       </section>
-      <section class="footer-networks">
-        <div class="container networks-box">
-          <p class="networks-text">ATLANTIKA.BIZ © 2022</p>
-          <ul class="networks-points">
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icon">
-                  <use href="../images/symbol-defs.svg#icon-facebook"></use>
-                </svg></a>
+      <section class="footer__networks">
+        <div class="container networks__box">
+          <p class="networks__text">ATLANTIKA.BIZ © 2022</p>
+          <ul class="networks__points">
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
+                  <use href="../images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
             </li>
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icony">
-                  <use href="../images/symbol-defs.svg#icon-youtube"></use>
-                </svg></a>
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
+                  <use href="../images/symbol-defs.svg#icon-youtube"></use></svg
+              ></a>
             </li>
-            <li class="networks-point">
-              <a href="" class="networks-link"
-                ><svg class="networks-icon">
-                  <use href="../images/symbol-defs.svg#icon-instagram"></use>
-                </svg></a>
+            <li class="networks__point">
+              <a href="" class="networks__link"
+                ><svg class="networks__icon">
+                  <use
+                    href="../images/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
             </li>
           </ul>
         </div>
       </section>
     </footer>
-    <div class="scroll-top">
-      <a href="#delivery" class="scroll-link">
-        <svg class="scroll-icon">
+    <div class="scroll__top">
+      <a href="#hero" class="scroll__link">
+        <svg class="scroll__icon">
           <use href="../images/symbol-defs.svg#icon-arrow"></use>
         </svg>
       </a>
     </div>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" data-modal-close class="modal-close">
-          <svg class="modal-icon">
+        <button type="button" data-modal-close class="modal__close">
+          <svg class="modal__icon">
             <use href="../images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-text">
+        <p class="modal__text">
           Виконайте вхід, або зареєструйтеся для продовження
         </p>
-        <div class="modal-box">
-          <button class="modal-enter">Вхід</button>
-          <button class="modal-enter">Реєстрація</button>
+        <div class="modal__box">
+          <button class="modal__enter">Вхід</button>
+          <button class="modal__enter">Реєстрація</button>
         </div>
       </div>
     </div>
     <div data-login class="backdrop is-hidden">
-      <div class="login-modal">
-        <h2 class="login-title">Вхід до кабінету</h2>
-        <form class="login-form">
+      <div class="login">
+        <h2 class="login__title">Вхід до кабінету</h2>
+        <form class="login__form">
           <input
             type="text"
-            class="login-input"
+            class="login__input"
             name=""
             id=""
             placeholder="E-mail"
@@ -395,17 +418,17 @@
           />
           <input
             type="text"
-            class="login-input"
+            class="login__input"
             name=""
             id=""
             placeholder="Пароль"
             required
           />
-          <button type="subbmit" class="login-bt">Вхід</button>
+          <button type="subbmit" class="login__bt">Вхід</button>
         </form>
-        <div class="login-box">
-          <a href="" class="login-link">Забули пароль?</a>
-          <a href="" class="login-link">Реєстрація</a>
+        <div class="login__box">
+          <a href="" class="login__link">Забули пароль?</a>
+          <a href="" class="login__link">Реєстрація</a>
         </div>
       </div>
     </div>

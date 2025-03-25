@@ -4,99 +4,103 @@
     padding-bottom: 133px;
     background-repeat: no-repeat;
     background-size: cover;
+    &__title{
+        color: $text-color;
+        font-family: "Russo One", sans-serif;
+        font-size: 50px;
+        line-height: 55px; /* 110% */
+        margin-top: 92px;
+        }
 }
 
-.location__title{
-color: $text-color;
-font-family: "Russo One", sans-serif;
-font-size: 50px;
-line-height: 55px; /* 110% */
-margin-top: 92px;
-}
+
 
 .social{
     padding: 60px 0;
-}
-
-.social__box{
+   &__container{
+        display: flex;
+    }
+    
+   &__map{
+        margin-right: 85px;
+    }
+    
+   &__box{
+        margin: auto 0;
+    }
+    &__title{
+        color: $acctent-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+    margin-bottom: 20px;
+    }
+    
+    &__points{
     display: flex;
-}
-
-.social__map{
-    margin-right: 85px;
-}
-
-.social__box{
-    margin: auto 0;
-}
-
-.social__title{
-    color: $acctent-color;
-font-size: 20px;
-font-weight: 700;
-line-height: 30px; /* 150% */
-margin-bottom: 20px;
-}
-
-.social__points{
-display: flex;
-justify-content: flex-end;
-gap: 4px;
-}
-
-.social__viber{
-    width: 18px;
+    justify-content: flex-end;
+    gap: 4px;
+    }
+    
+    &__viber{
+        width: 18px;
+        height: 18px;
+        fill: #6F40AA;
+    }
+    
+    &__whatsapp{
+        width: 18px;
     height: 18px;
-    fill: #6F40AA;
+    fill: #2AA71B;
+    }
+    
+    &__telegram{
+        width: 18px;
+    height: 18px;
+    fill: #049BE4;
+    }
 }
 
-.social__whatsapp{
-    width: 18px;
-height: 18px;
-fill: #2AA71B;
+
+.socialinfo{
+    &__point{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+    }
+    
+    &__point:nth-child(2){
+        margin-top: 12px;
+    }
+    
+    &__point:nth-child(3){
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-top: 13px;
+    }
+    
+    &__text{
+        color: $editional-text;
+        margin-right: 31px;
+    }
+    
+    &__icon{
+        margin-left: 12px;
+        width: 15px;
+    height: 15px;
+    fill: $button-color;
+    }
+    
+    &__link{
+        color: $editional-text;
+    }
+    
+    &__schedule{
+        color: $editional-text;
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+    }
 }
 
-.social__telegram{
-    width: 18px;
-height: 18px;
-fill: #049BE4;
-}
 
-.socialinfo__point{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-}
-
-.socialinfo__point:nth-child(2){
-    margin-top: 12px;
-}
-
-.socialinfo__point:nth-child(3){
-    justify-content: center;
-    margin-bottom: 25px;
-    margin-top: 13px;
-}
-
-.socialinfo__text{
-    color: $editional-text;
-    margin-right: 31px;
-}
-
-.socialinfo__icon{
-    margin-left: 12px;
-    width: 15px;
-height: 15px;
-fill: $button-color;
-}
-
-.socialinfo__link{
-    color: $editional-text;
-}
-
-.socialinfo__schedule{
-    color: $editional-text;
-font-size: 14px;
-line-height: 22px; /* 157.143% */
-}

@@ -560,19 +560,16 @@ body {
 .info {
   background-color: #efefef;
 }
-
-.info-box {
+.info__container {
   display: flex;
 }
-
-.info-block {
+.info__block {
   padding-top: 20px;
   padding-bottom: 79px;
   justify-content: flex-start;
   align-items: center;
 }
-
-.info-title {
+.info__title {
   color: #283761;
   text-align: center;
   font-family: "Russo One", sans-serif;
@@ -583,8 +580,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-
-.info-text {
+.info__text {
   color: #666;
   font-size: 16px;
   line-height: 24px;
@@ -592,16 +588,14 @@ body {
   max-width: 579px;
   margin-top: 24px;
 }
-
-.antland {
+.info__antland {
   color: #666;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
 }
-
-.info-blockquote {
+.info__blockquote {
   color: #666;
   margin-top: 30px;
   font-size: 20px;
@@ -616,7 +610,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .location__title {
   color: #fff;
   font-family: "Russo One", sans-serif;
@@ -628,19 +621,15 @@ body {
 .social {
   padding: 60px 0;
 }
-
-.social__box {
+.social__container {
   display: flex;
 }
-
 .social__map {
   margin-right: 85px;
 }
-
 .social__box {
   margin: auto 0;
 }
-
 .social__title {
   color: #283761;
   font-size: 20px;
@@ -648,25 +637,21 @@ body {
   line-height: 30px; /* 150% */
   margin-bottom: 20px;
 }
-
 .social__points {
   display: flex;
   justify-content: flex-end;
   gap: 4px;
 }
-
 .social__viber {
   width: 18px;
   height: 18px;
   fill: #6F40AA;
 }
-
 .social__whatsapp {
   width: 18px;
   height: 18px;
   fill: #2AA71B;
 }
-
 .social__telegram {
   width: 18px;
   height: 18px;
@@ -679,48 +664,41 @@ body {
   align-items: center;
   margin-top: 12px;
 }
-
 .socialinfo__point:nth-child(2) {
   margin-top: 12px;
 }
-
 .socialinfo__point:nth-child(3) {
   justify-content: center;
   margin-bottom: 25px;
   margin-top: 13px;
 }
-
 .socialinfo__text {
   color: #666;
   margin-right: 31px;
 }
-
 .socialinfo__icon {
   margin-left: 12px;
   width: 15px;
   height: 15px;
   fill: #01a0c6;
 }
-
 .socialinfo__link {
   color: #666;
 }
-
 .socialinfo__schedule {
   color: #666;
   font-size: 14px;
   line-height: 22px; /* 157.143% */
 }
 
-.protein-hero {
+.protein {
   background-image: url(../images/backdrugs.png);
   padding-top: 20px;
   padding-bottom: 113px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.protein-title {
+.protein__title {
   color: #fff;
   font-family: "Russo One", sans-serif;
   font-size: 50px;
@@ -728,66 +706,59 @@ body {
   margin-top: 92px;
 }
 
-.main-delivery {
+.delivery {
   padding: 60px 0;
 }
-
-.delivery {
+.delivery__container {
   display: flex;
   gap: 90px;
 }
-
-.pay-title {
+.delivery__title {
   color: #283761;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px; /* 150% */
   margin-bottom: 20px;
 }
-
-.pay-points {
+.delivery__points {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.pay-text {
-  color: #666;
-  font-size: 16px;
-  line-height: 24px; /* 150% */
-  max-width: 418px;
-}
-
-.delivery-title {
-  color: #283761;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px; /* 150% */
-  margin-bottom: 20px;
-}
-
-.delivery-points {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.delivery-text {
+.delivery__text {
   color: #666;
   font-size: 16px;
   line-height: 24px; /* 150% */
   max-width: 528px;
 }
 
-.hero-drop {
+.pay__title {
+  color: #283761;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  margin-bottom: 20px;
+}
+.pay__points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pay__text {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  max-width: 418px;
+}
+
+.drop {
   padding-top: 20px;
   padding-bottom: 133px;
   background-image: url(../images/backdrop.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.herodrop-title {
+.drop__title {
   color: #fff;
   font-family: "Russo One", sans-serif;
   font-size: 50px;
@@ -795,52 +766,45 @@ body {
   margin-top: 92px;
 }
 
-.main-dropshipping {
+.dropshipping {
   padding-top: 60px;
 }
-
-.dropshipping {
+.dropshipping__box {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
-.dropshipping-title {
+.dropshipping__title {
   color: #283761;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px; /* 150% */
   margin-bottom: 20px;
 }
-
-.dropshipping-text {
+.dropshipping__text {
   color: #666;
   font-size: 16px;
   line-height: 24px; /* 150% */
   max-width: 996px;
 }
-
-.dropshipping-top {
+.dropshipping__top {
   color: #666;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
   max-width: 996px;
 }
-
-.dropshipping-list {
+.dropshipping__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
-.dropshipping-points {
+.dropshipping__points {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.drop {
+.dropshipping__sp {
   color: #666;
   font-size: 16px;
   font-weight: 700;
