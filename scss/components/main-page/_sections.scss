@@ -27,9 +27,7 @@
 
   &__title {
     color: $text-color;
-    font-family: "Russo One", sans-serif;
-    font-size: 50px;
-    line-height: 55px; /* 110% */
+    @extend %sections-title
   }
   &__link {
     display: block;
@@ -52,9 +50,7 @@
 }
 
 .registr {
-  border-radius: 8px;
-  border: 1px solid #01a0c6;
-  background-color: #01a0c6;
+  @extend %button;
   padding: 17px 32px;
   display: flex;
   gap: 40px;
@@ -102,9 +98,7 @@
   background-size: cover;
   &__title {
     color: $text-color;
-    font-family: "Russo One", sans-serif;
-    font-size: 50px;
-    line-height: 55px; /* 110% */
+    @extend %sections-title;
     margin-bottom: 24px;
   }
 
@@ -118,9 +112,7 @@
   }
 
   &__bt {
-    border-radius: 8px;
-    border: 1px solid #01a0c6;
-    background-color: #01a0c6;
+    @extend %button;
     padding: 17px 32px;
     display: flex;
     gap: 30px;
@@ -128,11 +120,7 @@
   }
 
   &__btext {
-    color: $text-color;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px; /* 141.176% */
-    text-transform: uppercase;
+    @extend %button-text
   }
 
   &__icon {
@@ -149,9 +137,7 @@
   &__title {
     color: $acctent-color;
     text-align: center;
-    font-family: "Russo One", sans-serif;
-    font-size: 50px;
-    line-height: 55px; /* 110% */
+    @extend %sections-title;
     margin-bottom: 16px;
   }
 
@@ -207,16 +193,11 @@
   }
 
   &__bt {
-    color: $text-color;
     text-align: center;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px; /* 141.176% */
+    @extend %button-text;
     text-transform: uppercase;
     padding: 17px 40px;
-    border-radius: 8px;
-    border: 1px solid #01a0c6;
-    background-color: #01a0c6;
+    @extend %button;
     margin-left: 329px;
   }
 }

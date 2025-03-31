@@ -6,9 +6,7 @@
   background-size: cover;
   &__title {
     color: $text-color;
-    font-family: "Russo One", sans-serif;
-    font-size: 50px;
-    line-height: 55px; /* 110% */
+    @extend %sections-title;
     margin-top: 92px;
   }
 }
@@ -22,10 +20,7 @@
     gap: 90px;
   }
   &__title {
-    color: $acctent-color;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px; /* 150% */
+    @extend %subtitle;
     margin-bottom: 20px;
   }
   
@@ -47,9 +42,7 @@
 .pay{
   &__title {
     color: $acctent-color;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px; /* 150% */
+    @extend %subtitle;
     margin-bottom: 20px;
   }
   
