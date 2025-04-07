@@ -4,46 +4,36 @@
     padding-top: 56px;
     padding-bottom: 50px;
   }
-  
+
   &__nav {
-    display: flex;
+    @include flexbox();
   }
-  
+
   &__nav__box {
-    display: flex;
-    gap: 104px;
+    @include flexbox($space: 104px);
   }
-  
+
   &__points {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 18px;
+    @include flexbox($space: 18px, $direction: column, $align: flex-start);
   }
-  
+
   &__link {
     color: $text-color;
     font-size: 13px;
   }
-  
+
   &__logo {
     margin-left: 138px;
     margin-right: 186px;
   }
 }
 
-
-
-
-
 .contacts__point {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexbox($justifying: space-between);
   &:nth-child(2) {
     margin-top: 11px;
   }
-  
+
   &:nth-child(3) {
     justify-content: flex-end;
     margin-bottom: 25px;
@@ -76,8 +66,7 @@
 }
 
 .contacts__schedule {
-  display: flex;
-  justify-content: flex-end;
+  @include flexbox($justifying: flex-end);
 }
 
 .contacts__text {
@@ -90,31 +79,28 @@
   padding-top: 16px;
   padding-bottom: 36px;
   &__box {
-    display: flex;
+    @include flexbox();
   }
-  
+
   &__points {
-    display: flex;
-    gap: 15px;
+    @include flexbox($space: 15px);
   }
-  
+
   &__text {
     color: #ccc;
     font-size: 12px;
     margin-right: auto;
   }
-  
+
   &__icon {
     width: 15px;
     height: 15px;
     fill: $text-color;
   }
-  
+
   &__icons {
     width: 21px;
     height: 15px;
     fill: $text-color;
   }
 }
-
-

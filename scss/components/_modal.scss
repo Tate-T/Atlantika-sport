@@ -51,9 +51,7 @@
   }
   
   &__box {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    @include flexbox($space: 20px);
   }
   
   &__enter {
@@ -108,10 +106,7 @@
   }
   
   &__form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: stretch;
+    @include flexbox($space: 18px, $align:stretch, $direction: column);
   }
   
   &__input {
@@ -135,8 +130,7 @@
   }
   
   &__box {
-    display: flex;
-    gap: 83px;
+    @include flexbox($space: 83px);
     margin-top: 18px;
   }
   
@@ -160,9 +154,7 @@
   height: 50px;
   background-color: $button-color;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox();
   position: fixed;
   top: 600px;
   left: 1300px;

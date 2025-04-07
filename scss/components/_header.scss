@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .top {
   &__container {
@@ -16,8 +17,7 @@
   }
 
   &__socials {
-    display: flex;
-    gap: 4px;
+    @include flexbox($space: 4px, $align: flex-start);
     margin-bottom: 8px;
   }
 
@@ -51,8 +51,7 @@
   &__registration {
     margin-left: 86px;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
+    @include flexbox($direction: column);
   }
 
   &__exit {
@@ -69,9 +68,7 @@
   }
 
   &__registrs {
-    display: flex;
-    gap: 11px;
-    align-items: center;
+    @include flexbox($space: 11px);
   }
 
   &__auth {
@@ -88,7 +85,7 @@
     }
   }
   &__basket {
-    display: flex;
+    @include flexbox();
   }
 
   &__basket:hover &__cart {
@@ -148,9 +145,7 @@
   }
 
   &__points {
-    display: flex;
-    gap: 45px;
-    justify-content: center;
+    @include flexbox($space: 45px);
   }
 
   &__point {

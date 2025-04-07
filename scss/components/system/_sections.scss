@@ -17,9 +17,7 @@ margin-top: 92px;
 }
 
 .discount__box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include flexbox($space: 20px, $direction: column);
 }
 
 .discount__text {
@@ -37,9 +35,7 @@ margin-top: 92px;
 }
 
 .discount__points {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  @include flexbox($space: 12px, $direction: column);
 }
 
 .discount__point::before {

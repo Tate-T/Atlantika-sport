@@ -9,14 +9,11 @@
   }
 
   &__box {
-    display: flex;
-    align-items: flex-end;
+    @include flexbox($align: flex-end);
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flexbox($direction: column, $space: 20px, $align: flex-start);
     margin-right: 200px;
   }
 
@@ -27,7 +24,7 @@
 
   &__title {
     color: $text-color;
-    @extend %sections-title
+    @extend %sections-title;
   }
   &__link {
     display: block;
@@ -39,9 +36,7 @@
 }
 
 .breadcrumb {
-  display: flex;
-  gap: 30px;
-
+  @include flexbox($space: 30px);
   &__link {
     color: $editional-text;
     font-size: 14px;
@@ -52,9 +47,7 @@
 .registr {
   @extend %button;
   padding: 17px 32px;
-  display: flex;
-  gap: 40px;
-  align-items: center;
+  @include flexbox($space: 40px);
   animation-name: shadow-hero;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -82,11 +75,10 @@
 .sponsors {
   padding: 56px 0;
   &__points {
-    display: flex;
+    @include flexbox();
     flex-wrap: wrap;
     column-gap: 52px;
     row-gap: 32px;
-    justify-content: center;
   }
 }
 
@@ -114,13 +106,11 @@
   &__bt {
     @extend %button;
     padding: 17px 32px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+    @include flexbox($space: 30px);
   }
 
   &__btext {
-    @extend %button-text
+    @extend %button-text;
   }
 
   &__icon {
@@ -139,6 +129,7 @@
     text-align: center;
     @extend %sections-title;
     margin-bottom: 16px;
+    z-index: 0;
   }
 
   &__top {
@@ -150,19 +141,15 @@
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
+    @include flexbox($direction: column, $align: normal);
   }
 
   &__points {
-    display: flex;
-    gap: 38px;
-    justify-content: space-between;
+    @include flexbox($space: 38px, $justifying: space-between);
   }
 
   &__box {
-    display: flex;
-    flex-direction: column;
+    @include flexbox($direction: column);
     margin-bottom: 62px;
   }
 
@@ -180,8 +167,7 @@
   }
 
   &__bottom {
-    display: flex;
-    align-items: center;
+    @include flexbox();
   }
 
   &__info__text {

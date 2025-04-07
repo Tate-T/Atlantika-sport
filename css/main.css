@@ -135,16 +135,24 @@ body {
 }
 .footer__nav {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .footer__nav__box {
   display: flex;
   gap: 104px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .footer__points {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   gap: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .footer__link {
   color: #fff;
@@ -157,6 +165,8 @@ body {
 
 .contacts__point {
   display: flex;
+  gap: 0;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -195,6 +205,9 @@ body {
 
 .contacts__schedule {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -210,10 +223,17 @@ body {
 }
 .networks__box {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .networks__points {
   display: flex;
   gap: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .networks__text {
   color: #ccc;
@@ -237,6 +257,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .top__container {
@@ -250,6 +271,9 @@ body {
 .top__socials {
   display: flex;
   gap: 4px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   margin-bottom: 8px;
 }
 .top__viber {
@@ -280,7 +304,10 @@ body {
   margin-left: 86px;
   margin-right: auto;
   display: flex;
+  gap: 0;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .top__exit {
   display: inline-block;
@@ -297,7 +324,9 @@ body {
 .top__registrs {
   display: flex;
   gap: 11px;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .top__auth {
   color: #666;
@@ -313,6 +342,10 @@ body {
 }
 .top__basket {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .top__basket:hover .top__cart {
   fill: #01a0c6;
@@ -366,6 +399,8 @@ body {
 .bottom__points {
   display: flex;
   gap: 45px;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 .bottom__point {
@@ -458,6 +493,8 @@ body {
 .modal__box {
   display: flex;
   gap: 20px;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 .modal__enter {
@@ -508,9 +545,10 @@ body {
 }
 .login__form {
   display: flex;
-  flex-direction: column;
   gap: 18px;
+  flex-direction: column;
   align-items: stretch;
+  justify-content: center;
 }
 .login__input {
   display: block;
@@ -533,6 +571,9 @@ body {
 .login__box {
   display: flex;
   gap: 83px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-top: 18px;
 }
 .login__link {
@@ -554,6 +595,8 @@ body {
   background-color: #01a0c6;
   border-radius: 50%;
   display: flex;
+  gap: 0;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -823,12 +866,17 @@ body {
 }
 .hero__box {
   display: flex;
+  gap: 0;
+  flex-direction: row;
   align-items: flex-end;
+  justify-content: center;
 }
 .hero__info {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   margin-right: 200px;
 }
 .hero__text {
@@ -849,6 +897,9 @@ body {
 .breadcrumb {
   display: flex;
   gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .breadcrumb__link {
   color: #666;
@@ -860,7 +911,9 @@ body {
   padding: 17px 32px;
   display: flex;
   gap: 40px;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   animation-name: shadow-hero;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -889,11 +942,14 @@ body {
 }
 .sponsors__points {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   -moz-column-gap: 52px;
        column-gap: 52px;
   row-gap: 32px;
-  justify-content: center;
 }
 
 .amongus {
@@ -919,7 +975,9 @@ body {
   padding: 17px 32px;
   display: flex;
   gap: 30px;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .amongus__icon {
   width: 10px;
@@ -936,6 +994,7 @@ body {
   color: #283761;
   text-align: center;
   margin-bottom: 16px;
+  z-index: 0;
 }
 .feedback__top {
   color: #666;
@@ -946,16 +1005,24 @@ body {
 }
 .feedback__form {
   display: flex;
+  gap: 0;
   flex-direction: column;
+  align-items: normal;
+  justify-content: center;
 }
 .feedback__points {
   display: flex;
   gap: 38px;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 .feedback__box {
   display: flex;
+  gap: 0;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 62px;
 }
 .feedback__lable {
@@ -971,7 +1038,10 @@ body {
 }
 .feedback__bottom {
   display: flex;
+  gap: 0;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .feedback__info__text {
   color: #666;
@@ -1035,8 +1105,10 @@ body {
 
 .discount__box {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .discount__text {
@@ -1055,8 +1127,10 @@ body {
 
 .discount__points {
   display: flex;
-  flex-direction: column;
   gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .percent {
