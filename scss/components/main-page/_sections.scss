@@ -36,7 +36,7 @@
 }
 
 .breadcrumb {
-  @include flexbox($space: 30px);
+  @include flexbox($space: 30px, $justifying: flex-start);
   &__link {
     color: $editional-text;
     font-size: 14px;

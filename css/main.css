@@ -262,6 +262,10 @@ body {
 
 .top__container {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -272,8 +276,8 @@ body {
   display: flex;
   gap: 4px;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 8px;
 }
 .top__viber {
@@ -632,6 +636,10 @@ body {
 }
 .info__container {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .info__block {
   padding-top: 20px;
@@ -645,6 +653,10 @@ body {
   margin-top: 40px;
   margin-bottom: 30px;
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   justify-content: flex-start;
 }
 .info__text {
@@ -688,6 +700,10 @@ body {
 }
 .social__container {
   display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .social__map {
   margin-right: 85px;
@@ -700,8 +716,10 @@ body {
 }
 .social__points {
   display: flex;
-  justify-content: flex-end;
   gap: 4px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 .social__viber {
   width: 18px;
@@ -720,10 +738,12 @@ body {
 }
 
 .socialinfo__point {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 12px;
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .socialinfo__point:nth-child(2) {
   margin-top: 12px;
@@ -771,14 +791,19 @@ body {
 .delivery__container {
   display: flex;
   gap: 90px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .delivery__title {
   margin-bottom: 20px;
 }
 .delivery__points {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .delivery__text {
   color: #666;
@@ -793,8 +818,10 @@ body {
 }
 .pay__points {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .pay__text {
   color: #666;
@@ -818,11 +845,14 @@ body {
 
 .dropshipping {
   padding-top: 60px;
+  background: #EFEFEF;
 }
 .dropshipping__box {
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
 }
 .dropshipping__text {
   color: #666;
@@ -839,13 +869,17 @@ body {
 }
 .dropshipping__list {
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
 }
 .dropshipping__points {
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .dropshipping__sp {
   color: #666;
@@ -899,7 +933,7 @@ body {
   gap: 30px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .breadcrumb__link {
   color: #666;
@@ -1086,7 +1120,6 @@ body {
 }
 
 .system {
-  background-color: #efefef;
   background-image: url(../images/backsystem.png);
   padding-top: 20px;
   padding-bottom: 133px;
@@ -1101,13 +1134,14 @@ body {
 
 .discount {
   padding: 60px 0;
+  background-color: #EFEFEF;
 }
 
 .discount__box {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 

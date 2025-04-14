@@ -17,8 +17,7 @@
 .delivery {
   padding: 60px 0;
   &__container {
-    display: flex;
-    gap: 90px;
+    @include flexbox($space: 90px, $align: flex-start);
   }
   &__title {
     @extend %subtitle;
@@ -26,9 +25,7 @@
   }
   
   &__points {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }
   
   &__text {
@@ -48,9 +45,7 @@
   }
   
   &__points {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }
   
   &__text {

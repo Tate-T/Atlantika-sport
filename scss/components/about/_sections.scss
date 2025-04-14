@@ -1,7 +1,7 @@
 .info {
   background-color: #efefef;
   &__container {
-    display: flex;
+    @include flexbox();
   }
   
   &__block {
@@ -17,7 +17,7 @@
     @extend %sections-title;
     margin-top: 40px;
     margin-bottom: 30px;
-    display: flex;
+    @include flexbox($justifying: flex-start);
     justify-content: flex-start;
   }
   

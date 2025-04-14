@@ -14,10 +14,9 @@
 
 .dropshipping {
   padding-top: 60px;
+  background: #EFEFEF;
   &__box {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }
 
   &__title {
@@ -40,18 +39,14 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }
 
   &__item::before {
   }
 
   &__points {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }
   &__sp {
     color: $editional-text;

@@ -17,7 +17,7 @@
 .social{
     padding: 60px 0;
    &__container{
-        display: flex;
+    @include flexbox($align: flex-start);
     }
     
    &__map{
@@ -33,9 +33,7 @@
     }
     
     &__points{
-    display: flex;
-    justify-content: flex-end;
-    gap: 4px;
+    @include flexbox($space: 4px, $justifying: flex-end);
     }
     
     &__viber{
@@ -60,10 +58,8 @@
 
 .socialinfo{
     &__point{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-top: 12px;
+        @include flexbox($justifying: space-between);
     }
     
     &__point:nth-child(2){

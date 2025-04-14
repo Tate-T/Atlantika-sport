@@ -8,7 +8,7 @@
 }
 .top {
   &__container {
-    display: flex;
+    @include flexbox();
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -17,7 +17,7 @@
   }
 
   &__socials {
-    @include flexbox($space: 4px, $align: flex-start);
+    @include flexbox($space: 4px, $justifying: flex-start);
     margin-bottom: 8px;
   }
 

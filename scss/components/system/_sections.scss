@@ -1,5 +1,4 @@
 .system {
-  background-color: #efefef;
   background-image: url(../images/backsystem.png);
   padding-top: 20px;
   padding-bottom: 133px;
@@ -14,10 +13,11 @@ margin-top: 92px;
 }
 .discount {
   padding: 60px 0;
+  background-color: #EFEFEF;
 }
 
 .discount__box {
-  @include flexbox($space: 20px, $direction: column);
+  @include flexbox($space: 20px, $direction: column, $align: flex-start);
 }
 
 .discount__text {
