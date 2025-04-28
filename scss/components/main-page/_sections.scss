@@ -1,25 +1,49 @@
 .hero {
   background-image: url(../images/background-main.png);
-  padding-top: 84px;
-  padding-bottom: 39px;
+  padding-top: 60px;
+  padding-bottom: 42px;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 1200px) {
+    padding-top: 84px;
+    padding-bottom: 39px;
+  }
   &__logo {
-    margin-bottom: 310px;
+    margin-bottom: 94px;
+    width: 240px;
+    height: 20px;
+    flex-shrink: 0;
+    @media screen and (min-width: 1200px) {
+      width: 455.75px;
+      height: 37.449px;
+      flex-shrink: 0;
+      margin-bottom: 310px;
+    }
   }
 
   &__box {
-    @include flexbox($align: flex-end);
+    @include flexbox($direction: column, $align: flex-start);
+    @media screen and (min-width: 1200px) {
+      @include flexbox($align: flex-end);
+    }
   }
 
   &__info {
     @include flexbox($direction: column, $space: 20px, $align: flex-start);
-    margin-right: 200px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 200px;
+      margin-bottom: 0;
+    }
   }
 
   &__text {
     color: $text-color;
     line-height: 26px; /* 144.444% */
+    width: 280px;
+    @media screen and (min-width: 1200px) {
+      width: 793px;
+    }
   }
 
   &__title {
@@ -27,11 +51,14 @@
     @extend %sections-title;
   }
   &__link {
-    display: block;
     margin-top: 57px;
     margin-left: auto;
     margin-right: auto;
     width: 22px;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 }
 
@@ -46,13 +73,17 @@
 
 .registr {
   @extend %button;
-  padding: 17px 32px;
-  @include flexbox($space: 40px);
+  padding: 10px 24px;
+  @include flexbox($space: 20px);
   animation-name: shadow-hero;
   animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  @media screen and (min-width: 1200px) {
+    padding: 17px 32px;
+    @include flexbox($space: 40px);
+  }
   &__text {
     color: $text-color;
     font-family: Play;
@@ -73,12 +104,19 @@
 }
 
 .sponsors {
-  padding: 56px 0;
+  padding: 20px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 56px 0;
+  }
   &__points {
     @include flexbox();
     flex-wrap: wrap;
-    column-gap: 52px;
+    column-gap: 20px;
+    row-gap: 8px;
+    @media screen and (min-width: 1200px) {
+      column-gap: 52px;
     row-gap: 32px;
+    }
   }
 }
 

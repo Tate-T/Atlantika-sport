@@ -38,8 +38,6 @@ margin-top: 92px;
   @include flexbox($space: 12px, $direction: column);
 }
 
-.discount__point::before {
-}
 
 .percent {
   color: var(--editional-text);
