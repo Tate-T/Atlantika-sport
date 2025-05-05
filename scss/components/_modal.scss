@@ -147,7 +147,12 @@
   }
 }
 
-
+.scroll__top{
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 
 .scroll__link{
   width: 50px;
