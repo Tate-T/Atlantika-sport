@@ -187,3 +187,19 @@
   fill: #FFF;
   transform: rotate(-90deg);
 }
+
+
+.menu{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 276px;
+height: 568px;
+background: #FFF;
+&__icon{
+  fill: #AD2808;
+  width: 12px;
+  height: 12px;
+}
+}

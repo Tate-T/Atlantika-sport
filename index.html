@@ -59,7 +59,7 @@
             </select>
           </div>
           <div class="top__burger">
-            <button type="button" class="top__menu">
+            <button data-menu-open type="button" class="top__menu">
               <svg
                 width="28"
                 height="24"
@@ -537,8 +537,38 @@
         </div>
       </div>
     </div>
+    <div data-menu class="backdrop is-hidden">
+      <div class="menu">
+        <button type="button" data-menu-close class="menu__close">
+          <svg class="menu__icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu__nav">
+          <li><a href="">Каталог товарів</a></li>
+          <li><a href="">Система знижок</a></li>
+          <li><a href="">Дропшипінг</a></li>
+          <li><a href="">Доставка і оплата</a></li>
+          <li><a href="">Акції</a></li>
+          <li><a href="">Контакти</a></li>
+          <li><a href="">Про нас</a></li>
+        </ul>
+        <ul>
+          <li>
+            <ul></ul>
+          </li>
+          <li>
+            <ul></ul>
+          </li>
+          <li>
+            <ul></ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/modallogin.js"></script>
+    <script src="./js/modalmenu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
