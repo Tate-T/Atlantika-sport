@@ -214,6 +214,11 @@ body {
   top: 10px;
   left: 30px;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    left: 260px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__logo {
     position: static;
@@ -328,8 +333,8 @@ body {
   margin-right: auto;
 }
 .networks__icon {
-  width: 15px;
-  height: 15px;
+  max-width: 21px;
+  max-height: 15px;
   fill: #fff;
 }
 .networks__icons {
@@ -809,15 +814,29 @@ body {
 .info__container {
   display: flex;
   gap: 0;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .info__container {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .info__block {
   padding-top: 20px;
   padding-bottom: 79px;
   justify-content: flex-start;
   align-items: center;
+}
+.info__img {
+  max-width: 628px;
+  width: 100%;
+  height: auto;
 }
 .info__title {
   color: #283761;
@@ -849,9 +868,14 @@ body {
 .info__blockquote {
   color: #666;
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 24px; /* 120% */
+}
+@media screen and (min-width: 1200px) {
+  .info__blockquote {
+    font-size: 20px;
+  }
 }
 
 .location {
@@ -865,6 +889,12 @@ body {
 .location__title {
   color: #fff;
   margin-top: 92px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .location__title {
+    text-align: start;
+  }
 }
 
 .social {
@@ -873,12 +903,29 @@ body {
 .social__container {
   display: flex;
   gap: 0;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .social__container {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 .social__map {
-  margin-right: 85px;
+  max-width: 630px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .social__map {
+    margin-right: 85px;
+  }
 }
 .social__box {
   margin: auto 0;
@@ -892,21 +939,27 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .social__points {
+    display: flex;
+  }
 }
 .social__viber {
   width: 18px;
   height: 18px;
-  fill: #6F40AA;
+  fill: #6f40aa;
 }
 .social__whatsapp {
   width: 18px;
   height: 18px;
-  fill: #2AA71B;
+  fill: #2aa71b;
 }
 .social__telegram {
   width: 18px;
   height: 18px;
-  fill: #049BE4;
+  fill: #049be4;
 }
 
 .socialinfo__point {
@@ -955,6 +1008,12 @@ body {
 .protein__title {
   color: #fff;
   margin-top: 92px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .protein__title {
+    text-align: start;
+  }
 }
 
 .delivery {
@@ -962,10 +1021,19 @@ body {
 }
 .delivery__container {
   display: flex;
-  gap: 90px;
-  flex-direction: row;
+  gap: 20px;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .delivery__container {
+    display: flex;
+    gap: 90px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 .delivery__title {
   margin-bottom: 20px;
@@ -1013,11 +1081,17 @@ body {
 .drop__title {
   color: #fff;
   margin-top: 92px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .drop__title {
+    text-align: start;
+  }
 }
 
 .dropshipping {
   padding-top: 60px;
-  background: #EFEFEF;
+  background: #efefef;
 }
 .dropshipping__box {
   display: flex;
@@ -1493,20 +1567,34 @@ body {
 
 .system {
   background-image: url(../images/backsystem.png);
-  padding-top: 20px;
-  padding-bottom: 133px;
+  padding-top: 16px;
+  padding-bottom: 156px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: 0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%, linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+@media screen and (min-width: 1200px) {
+  .system {
+    padding-top: 20px;
+    padding-bottom: 133px;
+  }
 }
 
 .system__title {
+  text-align: center;
   color: #fff;
-  margin-top: 92px;
+  margin-top: 121px;
+}
+@media screen and (min-width: 1200px) {
+  .system__title {
+    margin-top: 92px;
+    text-align: start;
+  }
 }
 
 .discount {
   padding: 60px 0;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .discount__box {

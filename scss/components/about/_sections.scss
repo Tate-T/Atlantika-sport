@@ -1,16 +1,25 @@
 .info {
   background-color: #efefef;
   &__container {
-    @include flexbox();
+    @include flexbox($direction: column-reverse);
+    @media screen and (min-width: 1200px) {
+      @include flexbox();
+    }
   }
-  
+
   &__block {
     padding-top: 20px;
     padding-bottom: 79px;
     justify-content: flex-start;
     align-items: center;
   }
-  
+
+  &__img {
+    max-width: 628px;
+    width: 100%;
+    height: auto;
+  }
+
   &__title {
     color: $acctent-color;
     text-align: center;
@@ -20,7 +29,7 @@
     @include flexbox($justifying: flex-start);
     justify-content: flex-start;
   }
-  
+
   &__text {
     color: $editional-text;
     font-size: 16px;
@@ -29,7 +38,7 @@
     max-width: 579px;
     margin-top: 24px;
   }
-  
+
   &__antland {
     color: $editional-text;
     font-size: 16px;
@@ -37,14 +46,15 @@
     font-weight: 700;
     line-height: 24px; /* 150% */
   }
-  
+
   &__blockquote {
     color: $editional-text;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 24px; /* 120% */
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
   }
 }
-
-

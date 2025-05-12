@@ -9,12 +9,16 @@
     color: $text-color;
     @extend %sections-title;
     margin-top: 92px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 
 .dropshipping {
   padding-top: 60px;
-  background: #EFEFEF;
+  background: #efefef;
   &__box {
     @include flexbox($space: 20px, $direction: column, $align: flex-start);
   }

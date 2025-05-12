@@ -1,19 +1,29 @@
 .system {
   background-image: url(../images/backsystem.png);
-  padding-top: 20px;
-  padding-bottom: 133px;
+  padding-top: 16px;
+  padding-bottom: 156px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: (0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+    padding-bottom: 133px;
+  }
 }
 
 .system__title {
+  text-align: center;
   color: $text-color;
   @extend %sections-title;
-margin-top: 92px;
+  margin-top: 121px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 92px;
+      text-align: start;
+  }
 }
 .discount {
   padding: 60px 0;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .discount__box {
@@ -37,7 +47,6 @@ margin-top: 92px;
 .discount__points {
   @include flexbox($space: 12px, $direction: column);
 }
-
 
 .percent {
   color: var(--editional-text);

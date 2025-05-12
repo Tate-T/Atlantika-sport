@@ -1,98 +1,110 @@
-.location{
-    background-color: #efefef;
-    background-image: url(../images/locationbackground.png);
-    padding-top: 20px;
-    padding-bottom: 133px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &__title{
-        color: $text-color;
-        @extend %sections-title;
-        margin-top: 92px;
-        }
+.location {
+  background-color: #efefef;
+  background-image: url(../images/locationbackground.png);
+  padding-top: 20px;
+  padding-bottom: 133px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    color: $text-color;
+    @extend %sections-title;
+    margin-top: 92px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
+  }
 }
 
+.social {
+  padding: 60px 0;
+  &__container {
+    @include flexbox($align: flex-start, $direction: column);
+    @media screen and (min-width: 1200px) {
+      @include flexbox($align: flex-start);
+    }
+  }
 
-
-.social{
-    padding: 60px 0;
-   &__container{
-    @include flexbox($align: flex-start);
-    }
-    
-   &__map{
-        margin-right: 85px;
-    }
-    
-   &__box{
-        margin: auto 0;
-    }
-    &__title{
-        @extend %subtitle;
+  &__map {
+    max-width: 630px;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 85px;
     }
-    
-    &__points{
+  }
+
+  &__box {
+    margin: auto 0;
+  }
+  &__title {
+    @extend %subtitle;
+    margin-bottom: 20px;
+  }
+
+  &__points {
     @include flexbox($space: 4px, $justifying: flex-end);
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
-    
-    &__viber{
-        width: 18px;
-        height: 18px;
-        fill: #6F40AA;
-    }
-    
-    &__whatsapp{
-        width: 18px;
+  }
+
+  &__viber {
+    width: 18px;
     height: 18px;
-    fill: #2AA71B;
-    }
-    
-    &__telegram{
-        width: 18px;
+    fill: #6f40aa;
+  }
+
+  &__whatsapp {
+    width: 18px;
     height: 18px;
-    fill: #049BE4;
-    }
+    fill: #2aa71b;
+  }
+
+  &__telegram {
+    width: 18px;
+    height: 18px;
+    fill: #049be4;
+  }
 }
 
+.socialinfo {
+  &__point {
+    margin-top: 12px;
+    @include flexbox($justifying: space-between);
+  }
 
-.socialinfo{
-    &__point{
-        margin-top: 12px;
-        @include flexbox($justifying: space-between);
-    }
-    
-    &__point:nth-child(2){
-        margin-top: 12px;
-    }
-    
-    &__point:nth-child(3){
-        justify-content: center;
-        margin-bottom: 25px;
-        margin-top: 13px;
-    }
-    
-    &__text{
-        color: $editional-text;
-        margin-right: 31px;
-    }
-    
-    &__icon{
-        margin-left: 12px;
-        width: 15px;
+  &__point:nth-child(2) {
+    margin-top: 12px;
+  }
+
+  &__point:nth-child(3) {
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 13px;
+  }
+
+  &__text {
+    color: $editional-text;
+    margin-right: 31px;
+  }
+
+  &__icon {
+    margin-left: 12px;
+    width: 15px;
     height: 15px;
     fill: $button-color;
-    }
-    
-    &__link{
-        color: $editional-text;
-    }
-    
-    &__schedule{
-        color: $editional-text;
+  }
+
+  &__link {
+    color: $editional-text;
+  }
+
+  &__schedule {
+    color: $editional-text;
     font-size: 14px;
     line-height: 22px; /* 157.143% */
-    }
+  }
 }
-
-
