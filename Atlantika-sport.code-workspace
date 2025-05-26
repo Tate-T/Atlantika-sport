@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Atlantika-sport",
+			"path": "."
+		},
+		{
+			"name": "desktop",
+			"path": "../../desktop"
+		},
+		{
+			"name": "mobile",
+			"path": "../../mobile"
+		}
+	],
+	"settings": {}
+}
