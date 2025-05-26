@@ -153,10 +153,25 @@
       <section class="hero" id="hero">
         <div class="container hero__container">
           <picture>
-            <source srcset="./images/">
-            <source >
-            <source >
-          <img src="./images/logomain.png" alt="atlantika" class="hero__logo" />
+            <source
+              srcset="
+                ./images/desktop/logo@desktop-1x.wepb 1x,
+                ./images/desktop/logo@desktop-2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/logo@mobile-1x.wepb 1x,
+                ./images/mobile/logo@mobile-2x.webp 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              src="./images/logomain.png"
+              alt="atlantika"
+              class="hero__logo"
+            />
           </picture>
           <div class="hero__box">
             <div class="hero__info">
@@ -577,8 +592,12 @@
             >
           </li>
           <li class="menu__nav"><a href="" class="menu__page">Акції</a></li>
-          <li class="menu__nav"><a href="./pages/contacts.html" class="menu__page">Контакти</a></li>
-          <li class="menu__nav"><a href="./pages/about.html" class="menu__page">Про нас</a></li>
+          <li class="menu__nav">
+            <a href="./pages/contacts.html" class="menu__page">Контакти</a>
+          </li>
+          <li class="menu__nav">
+            <a href="./pages/about.html" class="menu__page">Про нас</a>
+          </li>
         </ul>
         <ul class="menu__logins">
           <li class="menu__login"><a href="" class="menu__link">Кошик</a></li>
