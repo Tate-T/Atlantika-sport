@@ -1212,16 +1212,27 @@ body {
 }
 
 .hero {
-  background-image: url(../images/background-main.png);
+  background-image: url(../images/mobile/backgroundmain@mobile-1x.webp);
   padding-top: 60px;
   padding-bottom: 42px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile/backgroundmain@mobile-2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 84px;
     padding-bottom: 39px;
+    background-image: url(../images/desktop/backgroundmain@desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/backgroundmain@desktop-2x.webp);
   }
 }
 .hero__logo {
@@ -1385,16 +1396,27 @@ body {
 }
 
 .amongus {
-  background-image: url(../images/background-main2.png);
+  background-image: url(../images/mobile/background-amongus@mobile-1x.webp);
   padding-top: 80px;
   padding-bottom: 67px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .amongus {
+    background-image: url(../images/mobile/background-amongus@mobile-2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .amongus {
     padding-top: 105px;
     padding-bottom: 130px;
+    background-image: url(../images/desktop/background-amongus@desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .amongus {
+    background-image: url(../images/desktop/background-amongus@desktop-2x.webp);
   }
 }
 .amongus__title {

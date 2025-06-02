@@ -76,8 +76,12 @@
           <a
             href="./index.html"
             class="logo animate__animated animate__backInDown"
-            ><img src="./images/logo.png" alt="atlantika" class="logo__img"
-          /></a>
+            ><picture>
+              <source srcset="./images/desktop/logo@desktop-1x.webp 1x, ./images/desktop/logo@desktop-2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mobile/logo@mobile-1x.webp 1x, ./images/mobile/logo@mobile-2x.webp 2x" media="(min-width: 320px)">
+              <img src="./images/logo.png" alt="atlantika" class="logo__img" />
+            </picture>
+          </a>
           <div class="top__registration">
             <button type="button" class="top__exit">
               <svg class="top__enter">
@@ -155,14 +159,14 @@
           <picture>
             <source
               srcset="
-                ./images/desktop/logo-main@desktop-1x.wepb 1x,
+                ./images/desktop/logo-main@desktop-1x.webp 1x,
                 ./images/desktop/logo-main@desktop-2x.webp 2x
               "
               media="(min-width: 1200px)"
             />
             <source
               srcset="
-                ./images/mobile/logo-main@mobile-1x.wepb 1x,
+                ./images/mobile/logo-main@mobile-1x.webp 1x,
                 ./images/mobile/logo-main@mobile-2x.webp 2x
               "
               media="(min-width: 320px)"
@@ -405,7 +409,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desktop/mst@desktop-1xwebp  1x,
+                    ./images/desktop/mst@desktop-1x.webp 1x,
                     ./images/desktop/mst@desktop-2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -469,113 +473,155 @@
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images/desktop/@desktop-1x.webp 1x, ./images/desktop/now@desktop-2x.webp 2x"
+                  srcset="
+                    ./images/desktop/now@desktop-1x.webp 1x,
+                    ./images/desktop/now@desktop-2x.webp 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/mobile/@mobile-1x.webp 1x, ./images/mobile/now@mobile-2x.webp 2x"
+                  srcset="
+                    ./images/mobile/now@mobile-1x.webp 1x,
+                    ./images/mobile/now@mobile-2x.webp 2x
+                  "
                   media="(min-width: 320px)"
                 />
+                <img src="./images/now.png" alt="now" class="sponsors__img" />
               </picture>
-              <img src="./images/now.png" alt="now" class="sponsors__img" />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/power@desktop-1x.webp 1x,
+                    ./images/desktop/power@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/power@mobile-1x.webp 1x,
+                    ./images/mobile/power@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/powwerpro.png"
+                  alt="powwerpro"
+                  class="sponsors__img"
                 />
               </picture>
-              <img
-                src="./images/powwerpro.png"
-                alt="powwerpro"
-                class="sponsors__img"
-              />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/on@desktop-1x.webp 1x,
+                    ./images/desktop/on@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/on@mobile-1x.webp 1x,
+                    ./images/mobile/on@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
                 />
+                <img src="./images/on.png" alt="on" class="sponsors__img" />
               </picture>
-              <img src="./images/on.png" alt="on" class="sponsors__img" />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/scitec@desktop-1x.webp 1x,
+                    ./images/desktop/scitec@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/scitec@mobile-1x.webp 1x,
+                    ./images/mobile/scitec@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/scitec.png"
+                  alt="scitec"
+                  class="sponsors__img"
                 />
               </picture>
-              <img
-                src="./images/scitec.png"
-                alt="scitec"
-                class="sponsors__img"
-              />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/nutrex@desktop-1x.webp 1x,
+                    ./images/desktop/nutrex@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/nutrex@mobile-1x.webp 1x,
+                    ./images/mobile/nutrex@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/nutrex.png"
+                  alt="nutrex"
+                  class="sponsors__img"
                 />
               </picture>
-              <img
-                src="./images/nutrex.png"
-                alt="nutrex"
-                class="sponsors__img"
-              />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/ultimatenutrition@desktop-1x.webp 1x,
+                    ./images/desktop/ultimatenutrition@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/ultimatenutrition@mobile-1x.webp 1x,
+                    ./images/mobile/ultimatenutrition@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/nutriton.png"
+                  alt="nutriton"
+                  class="sponsors__img"
                 />
               </picture>
-              <img
-                src="./images/nutriton.png"
-                alt="nutriton"
-                class="sponsors__img"
-              />
             </li>
             <li class="sponsors__point">
               <picture>
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/desktop/usplabs@desktop-1x.webp 1x,
+                    ./images/desktop/usplabs@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
-                  media="(min-width: )"
+                  srcset="
+                    ./images/mobile/usplabs@mobile-1x.webp 1x,
+                    ./images/mobile/usplabs@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/usplabs.png"
+                  alt="usplabs"
+                  class="sponsors__img"
                 />
               </picture>
-              <img
-                src="./images/usplabs.png"
-                alt="usplabs"
-                class="sponsors__img"
-              />
             </li>
           </ul>
         </div>
@@ -707,11 +753,25 @@
             </ul>
           </div>
           <a href="./index.html" class="footer__logo"
-            ><img
-              src="./images/logofooter.png"
-              alt="atlantika"
-              class="footer__logo__img"
-          /></a>
+            ><picture>
+              <source
+                srcset="
+                  ./images/desktop/logo-footer@desktop-1x.webp 1x,
+                  ./images/desktop/logo-footer@desktop-2x.webp 2x
+                "
+                media="(min-width: 1200px)" />
+              <source
+                srcset="
+                  ./images/mobile/logo-footer@mobile-1x.webp 1x,
+                  ./images/mobile/logo-footer@mobile-2x.webp 2x
+                "
+                media="(min-width: 320px)" />
+              <img
+                src="./images/logofooter.png"
+                alt="atlantika"
+                class="footer__logo__img"
+            /></picture>
+          </a>
           <ul class="contacts">
             <li class="contacts__point">
               <h2 class="contacts__title">Ігор</h2>
