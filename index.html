@@ -155,15 +155,15 @@
           <picture>
             <source
               srcset="
-                ./images/desktop/logo@desktop-1x.wepb 1x,
-                ./images/desktop/logo@desktop-2x.webp 2x
+                ./images/desktop/logo-main@desktop-1x.wepb 1x,
+                ./images/desktop/logo-main@desktop-2x.webp 2x
               "
               media="(min-width: 1200px)"
             />
             <source
               srcset="
-                ./images/mobile/logo@mobile-1x.wepb 1x,
-                ./images/mobile/logo@mobile-2x.webp 2x
+                ./images/mobile/logo-main@mobile-1x.wepb 1x,
+                ./images/mobile/logo-main@mobile-2x.webp 2x
               "
               media="(min-width: 320px)"
             />
@@ -192,79 +192,304 @@
               </svg>
             </button>
           </div>
-          <a href="" class="hero__link"
-            ><img src="./images/mouse.png" alt="mouse" class="hero__img"
-          /></a>
+          <a href="" class="hero__link">
+            <svg
+              class="hero__img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="31"
+              viewBox="0 0 22 31"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_1_224)">
+                <path
+                  d="M0.054476 15.4885C0.054476 13.6535 -0.0165786 11.816 0.0679519 9.98467C0.287241 5.29482 4.11439 1.12217 8.77338 0.210117C14.0694 -0.826688 19.2833 2.0427 21.2006 6.90817C21.6625 8.08063 21.9234 9.2967 21.9283 10.5564C21.9418 14.0047 22.1145 17.4603 21.8695 20.8978C21.5436 25.4677 19.0751 28.6714 14.7763 30.286C8.17676 32.7629 1.32243 28.4885 0.189235 22.0678C-0.0802829 20.5441 0.0373249 19.0131 0.00669789 17.4846C-0.006778 16.8196 0.00424772 16.1534 0.00424772 15.4885C0.0213989 15.4885 0.0373249 15.4885 0.054476 15.4885ZM1.55765 15.1069C1.55765 16.9819 1.54662 18.4947 1.56133 20.0075C1.57235 21.1001 1.74141 22.1684 2.10159 23.2088C3.60476 27.5486 8.3985 30.2508 12.8578 29.2613C17.3416 28.2668 20.3688 24.5629 20.3908 20.0148C20.4055 16.9892 20.4031 13.9635 20.3859 10.9379C20.3822 10.3359 20.3332 9.72547 20.2144 9.13561C19.1351 3.77111 13.9493 0.526246 8.59329 1.84405C4.91437 2.74884 2.04646 6.03125 1.65688 9.72668C1.45597 11.6404 1.63483 13.5566 1.55765 15.1069Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+                <path
+                  d="M10.2119 12.8713C10.2119 10.2175 10.2279 7.75877 10.1997 5.29999C10.1936 4.78037 10.305 4.53692 10.86 4.64229C10.9384 4.65683 11.0242 4.65562 11.1038 4.64229C11.6 4.5563 11.7604 4.73193 11.7531 5.24912C11.7237 7.56739 11.7408 9.88567 11.7408 12.2027C11.7408 12.3638 11.7408 12.5237 11.7408 12.6957C12.0067 12.732 12.09 12.5068 12.2186 12.3808C13.1044 11.5184 13.9827 10.65 14.8501 9.77061C15.0437 9.57439 15.1502 9.54047 15.3781 9.75002C16.2712 10.57 16.2798 10.5591 15.4124 11.4191C14.1898 12.6315 12.9696 13.8464 11.747 15.0588C11.1687 15.6317 10.8012 15.6462 10.245 15.0976C8.84598 13.718 7.46164 12.3226 6.05157 10.9552C5.76122 10.6742 5.7796 10.5276 6.06137 10.2599C6.84052 9.51746 6.82827 9.50414 7.57802 10.249C8.41965 11.086 9.25883 11.9229 10.2119 12.8713Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_224">
+                  <rect width="22" height="31" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
         </div>
       </section>
       <section class="sponsors">
         <div class="container sponsors__container">
           <ul class="sponsors__points">
             <li class="sponsors__point">
-              <img
-                src="./images/allmax.png"
-                alt="allmax"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/allmax@desktop-1x.webp 1x,
+                    ./images/desktop/allmax@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/allmax@mobile-1x.webp 1x,
+                    ./images/mobile/allmax@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/allmax.png"
+                  alt="allmax"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/nutrend.png"
-                alt="nutrend"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/nutrend@desktop-1x.webp 1x,
+                    ./images/desktop/nutrend@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200p)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/nutrend@mobile-1x.webp 1x,
+                    ./images/mobile/nutrend@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/nutrend.png"
+                  alt="nutrend"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/puritanspride.png"
-                alt="puritanspride"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/pride@desktop-1x.webp 1x,
+                    ./images/desktop/pride@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/pride@mobile-1x.webp 1x,
+                    ./images/mobile/pride@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/puritanspride.png"
+                  alt="puritanspride"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/ostrovit.png"
-                alt="ostrovit"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/ostrovit@desktop-1x.webp 1x,
+                    ./images/desktop/ostrovit@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ostrovit@mobile-1x.webp 1x,
+                    ./images/mobile/ostrovit@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/ostrovit.png"
+                  alt="ostrovit"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/biotech.png"
-                alt="biotech"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/biotech@desktop-1x.webp 1x,
+                    ./images/desktop/biotech@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/biotech@mobile-1x.webp 1x,
+                    ./images/mobile/biotech@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/biotech.png"
+                  alt="biotech"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img src="./images/mars.png" alt="mars" class="sponsors__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mars@desktop-1x.webp 1x,
+                    ./images/desktop/mars@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mars@mobile-1x.webp 1x,
+                    ./images/mobile/mars@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mars.png" alt="mars" class="sponsors__img" />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img src="./images/bsn.png" alt="bsn" class="sponsors__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/bsn@desktop-1x.webp 1x,
+                    ./images/desktop/bsn@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/bsn@mobile-1x.webp 1x,
+                    ./images/mobile/bsn@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/bsn.png" alt="bsn" class="sponsors__img" />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/ironmaxx.png"
-                alt="ironmaxx"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/ironmaxx@desktop-1x.webp 1x,
+                    ./images/desktop/ironmaxx@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ironmaxx@mobile-1x.webp 1x,
+                    ./images/mobile/ironmaxx@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/ironmaxx.png"
+                  alt="ironmaxx"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img src="./images/mst.png" alt="mst" class="sponsors__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mst@desktop-1xwebp  1x,
+                    ./images/desktop/mst@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mst@mobile-1x.webp 1x,
+                    ./images/mobile/mst@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mst.png" alt="mst" class="sponsors__img" />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img
-                src="./images/mutant.png"
-                alt="mutant"
-                class="sponsors__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mutant@desktop-1x.webp 1x,
+                    ./images/desktop/mutant@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mutant@mobile-1x.webp 1x,
+                    ./images/mobile/mutant@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mutant.png"
+                  alt="mutant"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
-              <img src="./images/quest.png" alt="quest" class="sponsors__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/quest@desktop-1x.webp 1x,
+                    ./images/desktop/quest@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/quest@mobile-1x.webp 1x,
+                    ./images/mobile/quest@mobile-2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/quest.png"
+                  alt="quest"
+                  class="sponsors__img"
+                />
+              </picture>
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images/desktop/@desktop-1x.webp 1x, ./images/desktop/now@desktop-2x.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mobile/@mobile-1x.webp 1x, ./images/mobile/now@mobile-2x.webp 2x"
+                  media="(min-width: 320px)"
+                />
+              </picture>
               <img src="./images/now.png" alt="now" class="sponsors__img" />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img
                 src="./images/powwerpro.png"
                 alt="powwerpro"
@@ -272,9 +497,29 @@
               />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img src="./images/on.png" alt="on" class="sponsors__img" />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img
                 src="./images/scitec.png"
                 alt="scitec"
@@ -282,6 +527,16 @@
               />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img
                 src="./images/nutrex.png"
                 alt="nutrex"
@@ -289,6 +544,16 @@
               />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img
                 src="./images/nutriton.png"
                 alt="nutriton"
@@ -296,6 +561,16 @@
               />
             </li>
             <li class="sponsors__point">
+              <picture>
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+                <source
+                  srcset="./images//@-1x.webp 1x, ./images//@-2x.webp 2x"
+                  media="(min-width: )"
+                />
+              </picture>
               <img
                 src="./images/usplabs.png"
                 alt="usplabs"
