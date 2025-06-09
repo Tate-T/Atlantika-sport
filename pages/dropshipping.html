@@ -71,8 +71,23 @@
           <a
             href="../index.html"
             class="logo animate__animated animate__backInDown"
-            ><img src="../images/logo.png" alt="atlantika" class="logo__img"
-          /></a>
+            >  <picture>
+              <source
+                srcset="
+                  ../images/desktop/logo@desktop-1x.webp 1x,
+                  ../images/desktop/logo@desktop-2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ../images/mobile/logo@mobile-1x.webp 1x,
+                  ../images/mobile/logo@mobile-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="../images/logo.png" alt="atlantika" class="logo__img" />
+            </picture></a>
           <div class="top__registration">
             <button type="button" class="top__exit">
               <svg class="top__enter">
@@ -365,11 +380,27 @@
             </ul>
           </div>
           <a href="./index.html" class="footer__logo"
-            ><img
-              src="../images/logofooter.png"
-              alt="atlantika"
-              class="footer__logo__img"
-          /></a>
+            > <picture>
+              <source
+                srcset="
+                  ../images/desktop/logo-footer@desktop-1x.webp 1x,
+                  ../images/desktop/logo-footer@desktop-2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ../images/mobile/logo-footer@mobile-1x.webp 1x,
+                  ../images/mobile/logo-footer@mobile-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="../images/logofooter.png"
+                alt="atlantika"
+                class="footer__logo__img"
+              />
+            </picture></a>
           <ul class="contacts">
             <li class="contacts__point">
               <h2 class="contacts__title">Ігор</h2>

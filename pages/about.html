@@ -71,8 +71,25 @@
           <a
             href="../index.html"
             class="logo animate__animated animate__backInDown"
-            ><img src="../images/logo.png" alt="atlantika" class="logo__img"
-          /></a>
+          >
+            <picture>
+              <source
+                srcset="
+                  ../images/desktop/logo@desktop-1x.webp 1x,
+                  ../images/desktop/logo@desktop-2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ../images/mobile/logo@mobile-1x.webp 1x,
+                  ../images/mobile/logo@mobile-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="../images/logo.png" alt="atlantika" class="logo__img" />
+            </picture>
+          </a>
           <div class="top__registration">
             <button type="button" class="top__exit">
               <svg class="top__enter">
@@ -114,9 +131,7 @@
                 <a href="" class="bottom__page">Каталог товарів</a>
               </li>
               <li class="bottom__point">
-                <a href="./system.html" class="bottom__page"
-                  >Система знижок</a
-                >
+                <a href="./system.html" class="bottom__page">Система знижок</a>
               </li>
               <li class="bottom__point">
                 <a href="./dropshipping.html" class="bottom__page"
@@ -132,9 +147,7 @@
                 <a href="" class="bottom__page">Акції</a>
               </li>
               <li class="bottom__point">
-                <a href="./contacts.html" class="bottom__page"
-                  >Контакти</a
-                >
+                <a href="./contacts.html" class="bottom__page">Контакти</a>
               </li>
               <li class="bottom__point">
                 <a href="./about.html" class="bottom__page">Про нас</a>
@@ -188,11 +201,22 @@
             </blockquote>
           </div>
           <picture>
-            <source srcset="../images/desktop/back-about@desktop-1x.webp 1x, ../images/desktop/back-about@desktop-2x.webp 2x" media="(min-width: 1200px)">
-            <source srcset="../images/mobile/back-about@mobile-1x.webp 1x, ../images/mobile/back-about@mobile-2x.webp 2x" media="(min-width: 320px)">
+            <source
+              srcset="
+                ../images/desktop/back-about@desktop-1x.webp 1x,
+                ../images/desktop/back-about@desktop-2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ../images/mobile/back-about@mobile-1x.webp 1x,
+                ../images/mobile/back-about@mobile-2x.webp 2x
+              "
+              media="(min-width: 320px)"
+            />
             <img class="info__img" src="../images/gymgirl.png" alt="girl" />
           </picture>
-          
         </div>
       </section>
       <section class="feedback">
@@ -301,11 +325,27 @@
             </ul>
           </div>
           <a href="./index.html" class="footer__logo"
-            ><img
-              src="../images/logofooter.png"
-              alt="atlantika"
-              class="footer__logo__img"
-          /></a>
+            > <picture>
+              <source
+                srcset="
+                  ../images/desktop/logo-footer@desktop-1x.webp 1x,
+                  ../images/desktop/logo-footer@desktop-2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ../images/mobile/logo-footer@mobile-1x.webp 1x,
+                  ../images/mobile/logo-footer@mobile-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="../images/logofooter.png"
+                alt="atlantika"
+                class="footer__logo__img"
+              />
+            </picture></a>
           <ul class="contacts">
             <li class="contacts__point">
               <h2 class="contacts__title">Ігор</h2>
@@ -449,18 +489,18 @@
             <a href="./system.html" class="menu__page">Система знижок</a>
           </li>
           <li class="menu__nav">
-            <a href="./dropshipping.html" class="menu__page"
-              >Дропшипінг</a
-            >
+            <a href="./dropshipping.html" class="menu__page">Дропшипінг</a>
           </li>
           <li class="menu__nav">
-            <a href="./delivery.html" class="menu__page"
-              >Доставка і оплата</a
-            >
+            <a href="./delivery.html" class="menu__page">Доставка і оплата</a>
           </li>
           <li class="menu__nav"><a href="" class="menu__page">Акції</a></li>
-          <li class="menu__nav"><a href="./contacts.html" class="menu__page">Контакти</a></li>
-          <li class="menu__nav"><a href="./about.html" class="menu__page">Про нас</a></li>
+          <li class="menu__nav">
+            <a href="./contacts.html" class="menu__page">Контакти</a>
+          </li>
+          <li class="menu__nav">
+            <a href="./about.html" class="menu__page">Про нас</a>
+          </li>
         </ul>
         <ul class="menu__logins">
           <li class="menu__login"><a href="" class="menu__link">Кошик</a></li>

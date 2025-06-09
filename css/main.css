@@ -957,7 +957,7 @@ body {
 
 .location {
   background-color: #efefef;
-  background-image: url(../images/mobile/back-contact@mobile-1x.webp);
+  background-image: url(../images/mobile/back-system@mobile-1x.webp);
   padding-top: 20px;
   padding-bottom: 133px;
   background-repeat: no-repeat;
@@ -965,7 +965,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .location {
-    background-image: url(../images/mobile/back-contact@mobile-2x.webp);
+    background-image: url(../images/mobile/back-system@mobile-2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
