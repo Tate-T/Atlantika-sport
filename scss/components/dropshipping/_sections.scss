@@ -2,9 +2,22 @@
   background-color: #efefef;
   padding-top: 20px;
   padding-bottom: 133px;
-  background-image: url(../images/backdrop.png);
+  background-image: url(../images/mobile/back-drop@mobile-1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/back-drop@mobile-2x.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/back-drop@desktop-1x.webp);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/desktop/back-drop@desktop-2x.webp);
+  }
+  }
   &__title {
     color: $text-color;
     @extend %sections-title;

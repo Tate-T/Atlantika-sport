@@ -1,10 +1,23 @@
 .protein{
   background-color: #efefef;
-  background-image: url(../images/backdrugs.png);
+  background-image: url(../images/mobile/back-delivery@mobile-1x.webp);
   padding-top: 20px;
   padding-bottom: 113px;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/back-delivery@mobile-2x.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/back-delivery@desktop-1x.webp);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/desktop/back-delivery@desktop-2x.webp);
+  }
+  }
   &__title {
     color: $text-color;
     @extend %sections-title;
